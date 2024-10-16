@@ -1,0 +1,2057 @@
+[
+    {
+      "regNo": "SC 5001M",
+      "sideNo": "1",
+      "vehicleID": "f0f91905-8ea2-469b-8ae1-14b575b4fdfa"
+    },
+    {
+      "regNo": "SC 5002M",
+      "sideNo": "2",
+      "vehicleID": "f96b5dd6-1b48-4c2e-9cb0-18505e1e71d3"
+    },
+    {
+      "regNo": "SC 5003M",
+      "sideNo": "3",
+      "vehicleID": "27c97d1f-86b8-4bec-b9b4-92a399fe88be"
+    },
+    {
+      "regNo": "SC 5004M",
+      "sideNo": "4",
+      "vehicleID": "c7163864-028e-45d2-96f6-7a565ace0847"
+    },
+    {
+      "regNo": "SC 5005M",
+      "sideNo": "5",
+      "vehicleID": "44e85258-f882-4864-b974-f3e72b36edb0"
+    },
+    {
+      "regNo": "SC 5006M",
+      "sideNo": "6",
+      "vehicleID": "98a402ee-4375-4b40-8e29-5380a54377b6"
+    },
+    {
+      "regNo": "SC 5007M",
+      "sideNo": "7",
+      "vehicleID": "cb274ee1-66f7-4726-9d17-ee3bab5af36d"
+    },
+    {
+      "regNo": "SC 7908M",
+      "sideNo": "8",
+      "vehicleID": "da43e549-be41-43ce-b99a-ea03d5ab637d"
+    },
+    {
+      "regNo": "SC 7909M",
+      "sideNo": "9",
+      "vehicleID": "39a3a2d7-11e9-49b2-bd6c-34c35faf266d"
+    },
+    {
+      "regNo": "SC 7910M",
+      "sideNo": "10",
+      "vehicleID": "86082b7d-cf39-4d02-bf64-cfd1534ff09e"
+    },
+    {
+      "regNo": "SC 3411P",
+      "sideNo": "11",
+      "vehicleID": "75ce642e-516d-4276-a1e5-6be78accdefd"
+    },
+    {
+      "regNo": "SC 3412P",
+      "sideNo": "12",
+      "vehicleID": "a956c8b4-2a16-492b-b8bb-f18175b436a5"
+    },
+    {
+      "regNo": "SC 3413P",
+      "sideNo": "13",
+      "vehicleID": "03035b9c-60a1-4206-90dc-8f5f531cae73"
+    },
+    {
+      "regNo": "SC 3414P",
+      "sideNo": "14",
+      "vehicleID": "95706867-f9f8-4aa2-bae5-cd71a3a6fa14"
+    },
+    {
+      "regNo": "SC 3415P",
+      "sideNo": "15",
+      "vehicleID": "f0f63adb-632c-4bff-be23-bbf936935c33"
+    },
+    {
+      "regNo": "SC 3416P",
+      "sideNo": "16",
+      "vehicleID": "5030dd9b-96f5-45e1-8aa1-a18e8bb330ac"
+    },
+    {
+      "regNo": "SC 3417P",
+      "sideNo": "17",
+      "vehicleID": "a8d66d0e-89a4-436c-b3aa-298dd05bcf5d"
+    },
+    {
+      "regNo": "SC 3418P",
+      "sideNo": "18",
+      "vehicleID": "a67c3192-73fe-45b6-9d79-1d25f02ae331"
+    },
+    {
+      "regNo": "SC 3419P",
+      "sideNo": "19",
+      "vehicleID": "1cb0e20e-ec38-4606-bef4-9f3d964912f0"
+    },
+    {
+      "regNo": "SC 3420P",
+      "sideNo": "20",
+      "vehicleID": "4c207042-c5c4-4538-abe0-cb09808f6dfe"
+    },
+    {
+      "regNo": "SC 3421P",
+      "sideNo": "21",
+      "vehicleID": "28bb85af-0126-487c-8aad-ab851e83949e"
+    },
+    {
+      "regNo": "SC 3422P",
+      "sideNo": "22",
+      "vehicleID": "a764d4ae-cc9a-47ca-9e03-0fa4cae64cf6"
+    },
+    {
+      "regNo": "SC 3423Px",
+      "sideNo": "23x",
+      "vehicleID": "c28ceaa8-3d6b-4efd-b666-4a347a9eefbd"
+    },
+    {
+      "regNo": "SC 3424P",
+      "sideNo": "24",
+      "vehicleID": "01051e40-4c7d-4aa2-9157-33c47e07498a"
+    },
+    {
+      "regNo": "SC 3425P",
+      "sideNo": "25",
+      "vehicleID": "80da9e51-4f01-40a8-8934-994668917a6c"
+    },
+    {
+      "regNo": "SC 3426P",
+      "sideNo": "26",
+      "vehicleID": "3b65be29-dc57-4bae-a9bd-bc2eeb0cdf65"
+    },
+    {
+      "regNo": "SC 3427P",
+      "sideNo": "27",
+      "vehicleID": "a14fbe63-ec44-4bbe-b2b9-7e0f322a9d29"
+    },
+    {
+      "regNo": "SC 3428P",
+      "sideNo": "28",
+      "vehicleID": "9373385b-a6da-4aad-8563-3c14ca801d43"
+    },
+    {
+      "regNo": "SC 3429P",
+      "sideNo": "29",
+      "vehicleID": "37de05f7-95c4-4af5-bfb1-370b59edd5a6"
+    },
+    {
+      "regNo": "SC 3430P",
+      "sideNo": "30",
+      "vehicleID": "5c797849-1f92-4ad0-a12b-b595a2425eee"
+    },
+    {
+      "regNo": "SC 3431P",
+      "sideNo": "31",
+      "vehicleID": "504e3ab6-e619-47de-a526-3f546b9799f4"
+    },
+    {
+      "regNo": "SC 3432P",
+      "sideNo": "32",
+      "vehicleID": "5c3a4f7d-476b-4fa6-b44a-cc7ae8f412b5"
+    },
+    {
+      "regNo": "SC 3433P",
+      "sideNo": "33",
+      "vehicleID": "ec179ee9-931a-42ad-aa11-5f80cc3aa724"
+    },
+    {
+      "regNo": "SC 3434P",
+      "sideNo": "34",
+      "vehicleID": "94fa429c-eca5-4bd6-8479-e2e4806efe33"
+    },
+    {
+      "regNo": "SC 3435P",
+      "sideNo": "35",
+      "vehicleID": "22e06bf0-ea5e-434c-8aec-8638d8d7bc3b"
+    },
+    {
+      "regNo": "SC 5036P",
+      "sideNo": "36",
+      "vehicleID": "939a65d2-180d-47aa-8e01-f39d0ab4a4d7"
+    },
+    {
+      "regNo": "SC 5037P",
+      "sideNo": "37",
+      "vehicleID": "aea3e2be-00b2-4d85-9fa2-acbcc7e36126"
+    },
+    {
+      "regNo": "SC 5038P",
+      "sideNo": "38",
+      "vehicleID": "d43b3a7b-3441-4693-876f-24976a912d66"
+    },
+    {
+      "regNo": "SC 2539S",
+      "sideNo": "39",
+      "vehicleID": "725a1f1e-206e-4511-94b3-54abe8b68fed"
+    },
+    {
+      "regNo": "SC 2540S",
+      "sideNo": "40",
+      "vehicleID": "9d55baf4-dacc-46b1-883f-57a593563212"
+    },
+    {
+      "regNo": "SC 2541S",
+      "sideNo": "41",
+      "vehicleID": "ff7648d9-4956-43c1-acaf-6a8a88f2ae69"
+    },
+    {
+      "regNo": "SC 2542S",
+      "sideNo": "42",
+      "vehicleID": "e963ae8a-2866-4980-adff-23dd7427a785"
+    },
+    {
+      "regNo": "SC 2543S",
+      "sideNo": "43",
+      "vehicleID": "115e1aea-3051-4be3-acce-0cfe12c6499a"
+    },
+    {
+      "regNo": "SC 2544S",
+      "sideNo": "44",
+      "vehicleID": "5993581a-585d-43d8-87c7-54e0935db5da"
+    },
+    {
+      "regNo": "SC 2546S",
+      "sideNo": "45",
+      "vehicleID": "bdf8ab77-cfcb-4e57-ad71-bd9c2a3400c7"
+    },
+    {
+      "regNo": "SC 2545S",
+      "sideNo": "46",
+      "vehicleID": "9bb2583c-1af0-489c-9661-d3f81a0cd08f"
+    },
+    {
+      "regNo": "SC 2547S",
+      "sideNo": "47",
+      "vehicleID": "ca28ac24-36d4-4b02-b6dd-c786e56afbf9"
+    },
+    {
+      "regNo": "SC 2548S",
+      "sideNo": "48",
+      "vehicleID": "b84e6ec0-8b0a-498f-a7c2-4aeabe296cae"
+    },
+    {
+      "regNo": "SC 2549S",
+      "sideNo": "49",
+      "vehicleID": "61478161-1093-4b68-bb76-a680542e82d2"
+    },
+    {
+      "regNo": "SC 2550S",
+      "sideNo": "50",
+      "vehicleID": "c0535004-e078-42df-bb98-d8a6f0fa48f4"
+    },
+    {
+      "regNo": "SC 2551S",
+      "sideNo": "51",
+      "vehicleID": "3a87cb66-25ea-4dd4-bb56-2b99b9b3bec0"
+    },
+    {
+      "regNo": "SC 2552S",
+      "sideNo": "52",
+      "vehicleID": "a7830930-7628-4339-bd59-11dbfe33b19b"
+    },
+    {
+      "regNo": "SC 2553S",
+      "sideNo": "53",
+      "vehicleID": "5520bafb-0725-44fc-b984-026d365970cb"
+    },
+    {
+      "regNo": "SC 2518L",
+      "sideNo": "54",
+      "vehicleID": "dbd16432-4bdc-4e0c-87aa-b70c1bcfa524"
+    },
+    {
+      "regNo": "SC 2519L",
+      "sideNo": "55",
+      "vehicleID": "1fb821b6-10a1-468d-849b-ead60d955bfc"
+    },
+    {
+      "regNo": "SC 2520L",
+      "sideNo": "56",
+      "vehicleID": "a055ef38-31b0-44ce-a398-9cef2e949fb4"
+    },
+    {
+      "regNo": "SC 2521L",
+      "sideNo": "57",
+      "vehicleID": "fb1c6908-5f0a-45e5-8f9a-1bb8eac0d027"
+    },
+    {
+      "regNo": "SC 2523L",
+      "sideNo": "58",
+      "vehicleID": "5ae712cf-92e1-49b6-89cd-8d5c4c265f84"
+    },
+    {
+      "regNo": "SC 2559S",
+      "sideNo": "59",
+      "vehicleID": "7b3662f4-26b1-451a-9fb3-3b86672782ad"
+    },
+    {
+      "regNo": "SC 2560S",
+      "sideNo": "60",
+      "vehicleID": "c4ca7d7b-0c5d-4bdb-b308-3ea6de8b608f"
+    },
+    {
+      "regNo": "SC 2561S",
+      "sideNo": "61",
+      "vehicleID": "e5e2a6c5-df18-44c2-8f6d-34acd7cbffa4"
+    },
+    {
+      "regNo": "SC 2562S",
+      "sideNo": "62",
+      "vehicleID": "e92b572c-b1e9-4ba9-b150-3ce403b7fbba"
+    },
+    {
+      "regNo": "SC 2563S",
+      "sideNo": "63",
+      "vehicleID": "a2f7c887-6d21-429f-8d13-789b75633122"
+    },
+    {
+      "regNo": "SC 2564S",
+      "sideNo": "64",
+      "vehicleID": "81c18c7a-d5fc-4fa1-b216-26d20732ea46"
+    },
+    {
+      "regNo": "SC 2565S",
+      "sideNo": "65",
+      "vehicleID": "16bf0c82-ae6d-4bac-8e6d-d8190d0c42a6"
+    },
+    {
+      "regNo": "SC 2566S",
+      "sideNo": "66",
+      "vehicleID": "6083b663-eb20-44be-91e4-8ab69ac87f7c"
+    },
+    {
+      "regNo": "SC 2567S",
+      "sideNo": "67",
+      "vehicleID": "52891cbd-a11d-4b5f-abeb-42e5e5c9119e"
+    },
+    {
+      "regNo": "SC 2568S",
+      "sideNo": "68",
+      "vehicleID": "f58bb05d-8a9e-4458-9f60-e39429d429da"
+    },
+    {
+      "regNo": "SC 2569S",
+      "sideNo": "69",
+      "vehicleID": "27dd29f9-3da5-4083-9436-f7f1bba67bb0"
+    },
+    {
+      "regNo": "SC 2570S",
+      "sideNo": "70",
+      "vehicleID": "9f77321f-10cf-42b4-a92f-7a2a573756fe"
+    },
+    {
+      "regNo": "SC 2571S",
+      "sideNo": "71",
+      "vehicleID": "b4cb270c-9da7-47d1-962b-8bff128cb96e"
+    },
+    {
+      "regNo": "SC 2572S",
+      "sideNo": "72",
+      "vehicleID": "86c21eca-0d9a-4993-9d38-ba2630ada548"
+    },
+    {
+      "regNo": "SC 2573S",
+      "sideNo": "73",
+      "vehicleID": "af40940f-1a7e-4dc3-a074-15b1d509b14f"
+    },
+    {
+      "regNo": "SC 21584",
+      "sideNo": "74",
+      "vehicleID": "39fe8c7c-e4c4-4c86-a113-4045e8f3d3f0"
+    },
+    {
+      "regNo": "SC 2575S",
+      "sideNo": "75",
+      "vehicleID": "4fd5f33d-fee8-4596-b427-b9f5494e4970"
+    },
+    {
+      "regNo": "SC 2576S",
+      "sideNo": "76",
+      "vehicleID": "e5fbf7af-b87c-41a2-a27a-39de91ff4c57"
+    },
+    {
+      "regNo": "SC 2577S",
+      "sideNo": "77",
+      "vehicleID": "96fec712-7d5f-4812-b374-985da53ef3d8"
+    },
+    {
+      "regNo": "SC 2578S",
+      "sideNo": "78",
+      "vehicleID": "bacdda03-be5b-473f-8287-e871b0ea270e"
+    },
+    {
+      "regNo": "SC 2579S",
+      "sideNo": "79",
+      "vehicleID": "773dc53c-6cb4-4c16-be01-39fab9d2a60f"
+    },
+    {
+      "regNo": "SC 2580S",
+      "sideNo": "80",
+      "vehicleID": "b27ad7ae-44d4-4a96-9cd2-4f4095fe742a"
+    },
+    {
+      "regNo": "SC 2581S",
+      "sideNo": "81",
+      "vehicleID": "64f90a9b-e707-4801-b569-3fdfd2c24cff"
+    },
+    {
+      "regNo": "SC 2582S",
+      "sideNo": "82",
+      "vehicleID": "1606a7a4-b1fc-4765-b5a0-3126324e77b4"
+    },
+    {
+      "regNo": "SC 2583S",
+      "sideNo": "83",
+      "vehicleID": "c595077b-7e0e-4f6d-816d-260503b41b9b"
+    },
+    {
+      "regNo": "SC 2584S",
+      "sideNo": "84",
+      "vehicleID": "5a619191-ddd7-469a-9ef8-5fc1b9587e3a"
+    },
+    {
+      "regNo": "SC 10161",
+      "sideNo": "85",
+      "vehicleID": "eaa45347-7a21-45d9-b801-0c595730b599"
+    },
+    {
+      "regNo": "SC 04988",
+      "sideNo": "86",
+      "vehicleID": "0f2a0404-062b-4039-8504-3a30c90896f8"
+    },
+    {
+      "regNo": "SC 04992",
+      "sideNo": "87",
+      "vehicleID": "392e9ee7-d2a8-47b8-b92e-dc63b5cb8350"
+    },
+    {
+      "regNo": "SC 04991",
+      "sideNo": "88",
+      "vehicleID": "46a14184-3d27-49e2-817c-971355ea24af"
+    },
+    {
+      "regNo": "SC 04990",
+      "sideNo": "89",
+      "vehicleID": "0ce43553-c43f-46af-a30b-7d5b734380e4"
+    },
+    {
+      "regNo": "SC 2643J",
+      "sideNo": "90",
+      "vehicleID": "6d0dd915-ea06-4b30-acdb-4a6b0ebdbda5"
+    },
+    {
+      "regNo": "SC 04995",
+      "sideNo": "91",
+      "vehicleID": "304e8174-6822-4315-bf5b-e160c124b1a1"
+    },
+    {
+      "regNo": "SC 15579",
+      "sideNo": "92",
+      "vehicleID": "0c416487-ba47-4121-be94-1250996bb694"
+    },
+    {
+      "regNo": "SC 28578",
+      "sideNo": "93",
+      "vehicleID": "afe7dd98-d732-4ab6-8edd-40fc22a3db38"
+    },
+    {
+      "regNo": "SC 28580",
+      "sideNo": "94",
+      "vehicleID": "7948c43b-3d6b-46a8-9c03-e68e0f6c34b9"
+    },
+    {
+      "regNo": "SC 28583",
+      "sideNo": "95",
+      "vehicleID": "f4b656ad-2825-4ff2-8b62-c986563a7518"
+    },
+    {
+      "regNo": "SC 0846J",
+      "sideNo": "96",
+      "vehicleID": "ed9c70d6-1e75-4ad0-a948-a3d4df24c458"
+    },
+    {
+      "regNo": "SC 28588",
+      "sideNo": "97",
+      "vehicleID": "b3e12745-9549-4757-977b-5a58b42f22a1"
+    },
+    {
+      "regNo": "SC 28589",
+      "sideNo": "98",
+      "vehicleID": "717c9150-7b5f-4c12-90f7-c1db5e0f2558"
+    },
+    {
+      "regNo": "SC 28590",
+      "sideNo": "99",
+      "vehicleID": "3ed89697-b6aa-4394-a0c7-757252dd345c"
+    },
+    {
+      "regNo": "SC 28591",
+      "sideNo": "100",
+      "vehicleID": "78de2634-cf1a-4c09-b0be-3b3f874831d0"
+    },
+    {
+      "regNo": "SC 28594",
+      "sideNo": "101",
+      "vehicleID": "262240f0-6477-4088-a9c4-5110a97d25b5"
+    },
+    {
+      "regNo": "SC 8919G",
+      "sideNo": "108",
+      "vehicleID": "6b9ddd10-de2d-4287-ad90-64b262707fb8"
+    },
+    {
+      "regNo": "SC 82431",
+      "sideNo": "109",
+      "vehicleID": "fc8602ee-3b4f-4b95-a7f0-d41f2e2e1172"
+    },
+    {
+      "regNo": "SC 82432",
+      "sideNo": "110",
+      "vehicleID": "72db0572-44cf-43b2-9cae-247360b9e701"
+    },
+    {
+      "regNo": "SC 82920",
+      "sideNo": "111",
+      "vehicleID": "ad339d22-b078-43f6-9df5-1d5fe0bcfbab"
+    },
+    {
+      "regNo": "SC 82921",
+      "sideNo": "112",
+      "vehicleID": "35d23431-3e68-473d-afd1-b761d54f4b7f"
+    },
+    {
+      "regNo": "SC 82922",
+      "sideNo": "113",
+      "vehicleID": "77620f5f-1dcf-47b0-8948-ffa84dd4c291"
+    },
+    {
+      "regNo": "SC 82981",
+      "sideNo": "114",
+      "vehicleID": "87630262-9bbf-4bff-a4bc-dc11c6a4fe1b"
+    },
+    {
+      "regNo": "SC 82983",
+      "sideNo": "115",
+      "vehicleID": "c0a94f7f-7fc4-4fc7-a5c9-8ad4f7683765"
+    },
+    {
+      "regNo": "SC 82984",
+      "sideNo": "116",
+      "vehicleID": "42e67ef8-3925-4f6f-86e6-9aa59073fcf8"
+    },
+    {
+      "regNo": "SC 83110",
+      "sideNo": "117",
+      "vehicleID": "4172bf1f-6541-4542-ad16-8b9179cda7bc"
+    },
+    {
+      "regNo": "SC 9790G",
+      "sideNo": "118",
+      "vehicleID": "08619220-04ab-45e9-bd27-a1f8a10977d4"
+    },
+    {
+      "regNo": "SC 5532A",
+      "sideNo": "119",
+      "vehicleID": "7a18f0e5-bdd6-42a6-a004-f0f89d19df61"
+    },
+    {
+      "regNo": "SC 5534A",
+      "sideNo": "120",
+      "vehicleID": "15865053-8c87-4dc5-a432-2daf5202d459"
+    },
+    {
+      "regNo": "SC 5538A",
+      "sideNo": "121",
+      "vehicleID": "571723fb-e6b0-46b0-8db3-291febb00a9d"
+    },
+    {
+      "regNo": "SC 5537A",
+      "sideNo": "122",
+      "vehicleID": "b59d93b4-5816-436d-9010-52f65bb260e4"
+    },
+    {
+      "regNo": "SC 5536A",
+      "sideNo": "123",
+      "vehicleID": "fa2e8ffd-18c7-4ae2-a5cc-3cc336d66c62"
+    },
+    {
+      "regNo": "SC 5528A",
+      "sideNo": "124",
+      "vehicleID": "d48ebde0-8194-475c-b7e9-7ec3e8c88bcc"
+    },
+    {
+      "regNo": "SC 5529A",
+      "sideNo": "125",
+      "vehicleID": "d00b4b49-180e-4f97-a336-f5f76b92e9fa"
+    },
+    {
+      "regNo": "SC 5531A",
+      "sideNo": "126",
+      "vehicleID": "775c5580-dd15-44f5-9913-65b4e7aab25b"
+    },
+    {
+      "regNo": "SC 5530A",
+      "sideNo": "127",
+      "vehicleID": "6e22ba60-ce24-4a75-b552-8208653e7395"
+    },
+    {
+      "regNo": "SC 5527A",
+      "sideNo": "128",
+      "vehicleID": "c3d6af20-f487-4a10-961e-19c883fe3927"
+    },
+    {
+      "regNo": "SC 2354F",
+      "sideNo": "129",
+      "vehicleID": "5e9970ea-b264-43f4-8f4d-3a77ce6b6252"
+    },
+    {
+      "regNo": "SC 2356F",
+      "sideNo": "130",
+      "vehicleID": "0e907212-5130-4a12-bd91-6a08e54212df"
+    },
+    {
+      "regNo": "SC 2359F",
+      "sideNo": "131",
+      "vehicleID": "a1793387-fbb8-4e1c-8ab4-ca0c610eae37"
+    },
+    {
+      "regNo": "SC 2351F",
+      "sideNo": "132",
+      "vehicleID": "29ef224d-15cc-4087-a75f-a3ea5849edfa"
+    },
+    {
+      "regNo": "SC 5818G",
+      "sideNo": "133",
+      "vehicleID": "a858bd53-7d38-4a28-b89b-e9d9c19fa828"
+    },
+    {
+      "regNo": "SC 8126G",
+      "sideNo": "134",
+      "vehicleID": "05b0c3d1-5f79-45ae-88b8-92a2af9cb4e4"
+    },
+    {
+      "regNo": "SC 2353F",
+      "sideNo": "135",
+      "vehicleID": "b55f4fa5-1aac-4d71-bcc8-2fef6cf03fe7"
+    },
+    {
+      "regNo": "SC 8522G",
+      "sideNo": "136",
+      "vehicleID": "5afca59b-8529-419a-a25b-7f67635741dd"
+    },
+    {
+      "regNo": "SC 4135G",
+      "sideNo": "137",
+      "vehicleID": "7f912328-57a4-4a8b-9fbe-9470ba13f314"
+    },
+    {
+      "regNo": "SC 2641J",
+      "sideNo": "138",
+      "vehicleID": "ac54441f-9666-4e0b-9554-efaf36f84c28"
+    },
+    {
+      "regNo": "SC 4138G",
+      "sideNo": "139",
+      "vehicleID": "7a69ca7d-3b0b-45b4-a2db-26575af899db"
+    },
+    {
+      "regNo": "SC 4137G",
+      "sideNo": "140",
+      "vehicleID": "6a27b397-ff2b-4323-8352-31b020c93f37"
+    },
+    {
+      "regNo": "SC 4139G",
+      "sideNo": "141",
+      "vehicleID": "f9f8b6d2-d7bc-4d73-aef1-5f65482b0807"
+    },
+    {
+      "regNo": "SC 4822G",
+      "sideNo": "142",
+      "vehicleID": "38d80c24-671d-4731-bafd-6e5b6e126f12"
+    },
+    {
+      "regNo": "SC 2453V",
+      "sideNo": "153",
+      "vehicleID": "9acc796b-5586-4aab-84ba-bd07179ac988"
+    },
+    {
+      "regNo": "SC 2454V",
+      "sideNo": "154",
+      "vehicleID": "bdc27d29-ad40-497d-a568-619be394a2f1"
+    },
+    {
+      "regNo": "SC 32333",
+      "sideNo": "160.",
+      "vehicleID": "445a98f7-410a-4f4a-8308-6f635beea64d"
+    },
+    {
+      "regNo": "SC 21576",
+      "sideNo": "161",
+      "vehicleID": "63a1aaa0-af70-4919-9348-4d26d4cbe8d3"
+    },
+    {
+      "regNo": "SC 32260",
+      "sideNo": "162",
+      "vehicleID": "bb8c4b1d-2847-4873-bd40-5c0c1e08799b"
+    },
+    {
+      "regNo": "SC 32292",
+      "sideNo": "163",
+      "vehicleID": "95fbe0e9-c789-44c7-a34f-b9330ae9d509"
+    },
+    {
+      "regNo": "SC 32170",
+      "sideNo": "164",
+      "vehicleID": "901d3772-f475-4afe-9718-bff7aef4528a"
+    },
+    {
+      "regNo": "SC 32178",
+      "sideNo": "165",
+      "vehicleID": "0a32e15a-fc28-4ccf-aa70-6abd720517bb"
+    },
+    {
+      "regNo": "SC 32319",
+      "sideNo": "166",
+      "vehicleID": "4ff0e481-c868-4eda-ab90-d690ebd81d84"
+    },
+    {
+      "regNo": "SC 32179",
+      "sideNo": "167",
+      "vehicleID": "c964ca44-7cc8-4416-85f2-0fac673130e2"
+    },
+    {
+      "regNo": "SC 21574",
+      "sideNo": "168",
+      "vehicleID": "defd79e3-f106-4637-8af1-2cd966abf1ea"
+    },
+    {
+      "regNo": "SC 32259",
+      "sideNo": "169",
+      "vehicleID": "29e98e7d-45f4-4967-ade7-6dfe1b69e4a3"
+    },
+    {
+      "regNo": "SC 32166",
+      "sideNo": "170",
+      "vehicleID": "95ed1d0b-cd80-42e8-abaf-e5faf80bcf99"
+    },
+    {
+      "regNo": "SC 32326",
+      "sideNo": "171",
+      "vehicleID": "7075a150-8274-4bcf-b5a7-d7820fa62562"
+    },
+    {
+      "regNo": "SC 32334",
+      "sideNo": "172",
+      "vehicleID": "f8292ccc-fc2f-4f01-b7ea-04d5b4818dca"
+    },
+    {
+      "regNo": "SC 32325",
+      "sideNo": "173",
+      "vehicleID": "71906043-3968-41e7-99d4-e94028db6800"
+    },
+    {
+      "regNo": "SC 32160",
+      "sideNo": "174",
+      "vehicleID": "3f8a35c0-2f54-4af4-8f33-4aa566b1c7eb"
+    },
+    {
+      "regNo": "SC 32327",
+      "sideNo": "175",
+      "vehicleID": "42ac814e-6db3-4598-8f27-1250d28780d0"
+    },
+    {
+      "regNo": "SC 06027",
+      "sideNo": "176",
+      "vehicleID": "3cea5fe9-22a9-4809-bdeb-b1f5f98cf259"
+    },
+    {
+      "regNo": "SC 82122",
+      "sideNo": "177",
+      "vehicleID": "ac81881d-2340-4a6b-8ede-59f88f414127"
+    },
+    {
+      "regNo": "SC 82123",
+      "sideNo": "178",
+      "vehicleID": "c3e10cf3-6f07-4e1d-a164-1c85bfb1638a"
+    },
+    {
+      "regNo": "SC 82124",
+      "sideNo": "179",
+      "vehicleID": "28fa4e5e-8adf-46ba-ae1f-69ee79264d49"
+    },
+    {
+      "regNo": "SC 82125",
+      "sideNo": "180",
+      "vehicleID": "a43eb101-cce4-4dd6-8719-0769fef34630"
+    },
+    {
+      "regNo": "SC 82126",
+      "sideNo": "181",
+      "vehicleID": "8c6ab9bd-5047-4ffb-8f17-b0cc7f7c7f42"
+    },
+    {
+      "regNo": "SC 82127",
+      "sideNo": "182",
+      "vehicleID": "b335b21c-62d8-49f1-a53d-9ff876208770"
+    },
+    {
+      "regNo": "SC 82128",
+      "sideNo": "183",
+      "vehicleID": "bd17b221-8f4b-41ea-9af9-e13a426755d9"
+    },
+    {
+      "regNo": "SC 82129",
+      "sideNo": "184",
+      "vehicleID": "9cd857ca-d2cf-41a1-9831-11c3556983ed"
+    },
+    {
+      "regNo": "SC 2276F",
+      "sideNo": "185",
+      "vehicleID": "2cb6cd29-3bd5-4c94-a606-a2faee0ffc0d"
+    },
+    {
+      "regNo": "SC 2271F",
+      "sideNo": "186",
+      "vehicleID": "7b78622b-f001-461e-a1e6-1652cbd6f63f"
+    },
+    {
+      "regNo": "SC 2275F",
+      "sideNo": "187",
+      "vehicleID": "8def3b75-f2a4-4883-80dc-e61659d6847e"
+    },
+    {
+      "regNo": "SC 2274F",
+      "sideNo": "188",
+      "vehicleID": "e9daa0a7-a96f-4d42-8af3-a0890d3a147a"
+    },
+    {
+      "regNo": "SC 2273F",
+      "sideNo": "189",
+      "vehicleID": "cf3c5c43-efa2-4808-bd7e-c104aa172459"
+    },
+    {
+      "regNo": "SC 2269F",
+      "sideNo": "190",
+      "vehicleID": "fa6ff301-9d1e-4013-9da0-d84f123314ee"
+    },
+    {
+      "regNo": "SC 0225H",
+      "sideNo": "191",
+      "vehicleID": "de6c8a65-38e9-4a96-af08-e30776fe9bc7"
+    },
+    {
+      "regNo": "SC 3841G",
+      "sideNo": "192",
+      "vehicleID": "f0897f4a-07ff-46e5-9c41-4c4ab9e28c6e"
+    },
+    {
+      "regNo": "SC 3842G",
+      "sideNo": "193",
+      "vehicleID": "f1b85db0-bcc4-4b8d-89b6-a7b06e9e23cc"
+    },
+    {
+      "regNo": "SC 3843G",
+      "sideNo": "194",
+      "vehicleID": "0cf711be-af76-442e-93af-d5971184d559"
+    },
+    {
+      "regNo": "SC 3845G",
+      "sideNo": "195",
+      "vehicleID": "dc5370c2-11e0-405c-8819-1c8ad7a95a0f"
+    },
+    {
+      "regNo": "SC 4196P",
+      "sideNo": "196",
+      "vehicleID": "201583e3-a023-4a9c-af60-c07adf9f709b"
+    },
+    {
+      "regNo": "SC 4197P",
+      "sideNo": "197",
+      "vehicleID": "f64710b9-8735-4267-b675-b5f5773a2af8"
+    },
+    {
+      "regNo": "SC 4198P",
+      "sideNo": "198",
+      "vehicleID": "1120db2f-b1b2-4492-b8b6-a144a2b06953"
+    },
+    {
+      "regNo": "SC 4199P",
+      "sideNo": "199",
+      "vehicleID": "19ca893e-98c9-4c28-a929-1c60b7445a7d"
+    },
+    {
+      "regNo": "SC 4200P",
+      "sideNo": "200",
+      "vehicleID": "7b6dd895-a630-4e09-85c6-6ec16c913f19"
+    },
+    {
+      "regNo": "SC 4201P",
+      "sideNo": "201",
+      "vehicleID": "3e15056d-a0fe-4056-81f8-a68f9ad98835"
+    },
+    {
+      "regNo": "SC 4202P",
+      "sideNo": "202",
+      "vehicleID": "e93f99ad-24ff-4348-bac9-4918511aa4d3"
+    },
+    {
+      "regNo": "SC 4203P",
+      "sideNo": "203",
+      "vehicleID": "b90e442f-a627-4a48-870c-a7ccb5dc402b"
+    },
+    {
+      "regNo": "SC 4204P",
+      "sideNo": "204",
+      "vehicleID": "36d5cba6-066e-4ef1-adad-757ace4dc7c5"
+    },
+    {
+      "regNo": "SC 4205P",
+      "sideNo": "205",
+      "vehicleID": "7e43d061-2046-4b2d-8bdc-f48de67eae5b"
+    },
+    {
+      "regNo": "SC 4206P",
+      "sideNo": "206",
+      "vehicleID": "def27258-ca71-4451-8d60-a1265dd6a629"
+    },
+    {
+      "regNo": "SC 4207P",
+      "sideNo": "207",
+      "vehicleID": "a6bb9f4e-f928-44ae-8e26-38c16715e1ab"
+    },
+    {
+      "regNo": "SC 4208P",
+      "sideNo": "208",
+      "vehicleID": "27345f71-7bb6-42ad-a43b-8595058fbdc9"
+    },
+    {
+      "regNo": "SC 4209P",
+      "sideNo": "209",
+      "vehicleID": "0c923204-1b49-40fa-820d-984a849c755f"
+    },
+    {
+      "regNo": "-",
+      "sideNo": "254",
+      "vehicleID": "17079c1f-9899-4329-b8cf-e4500a39e840"
+    },
+    {
+      "regNo": "SC 11024",
+      "sideNo": "288",
+      "vehicleID": "44908f19-9344-4302-aadc-25bb0b2a786c"
+    },
+    {
+      "regNo": "SC 7720S",
+      "sideNo": "401",
+      "vehicleID": "89d87072-f83d-41d3-b2a3-40e72a80e68c"
+    },
+    {
+      "regNo": "SC 7719S",
+      "sideNo": "406",
+      "vehicleID": "142cd2fd-4280-4529-8b28-57df79bce67e"
+    },
+    {
+      "regNo": "SC 7718S",
+      "sideNo": "407",
+      "vehicleID": "939cea45-4de1-469d-91e1-bc9b11d55fac"
+    },
+    {
+      "regNo": "202",
+      "sideNo": "202",
+      "vehicleID": "8fe38cff-c355-42a2-9c9a-0012291fb433"
+    },
+    {
+      "regNo": "601",
+      "sideNo": "601",
+      "vehicleID": "9816b4d3-ed7f-4ca2-8129-8fa71232a712"
+    },
+    {
+      "regNo": "603",
+      "sideNo": "603",
+      "vehicleID": "2d0b545c-3aff-4f64-b57b-93dde444b3a2"
+    },
+    {
+      "regNo": "602",
+      "sideNo": "602",
+      "vehicleID": "cd55e4b1-3327-47f9-a99f-6ddf81de88f0"
+    },
+    {
+      "regNo": "604",
+      "sideNo": "604",
+      "vehicleID": "513e5d2c-e0c0-47c8-8cbf-a927ab71fbe9"
+    },
+    {
+      "regNo": "605",
+      "sideNo": "605",
+      "vehicleID": "f3101dbd-5f36-44b3-9207-25e55cbb5b5c"
+    },
+    {
+      "regNo": "606",
+      "sideNo": "606",
+      "vehicleID": "d6aa0b79-95d3-4585-9723-d9f734d15fd7"
+    },
+    {
+      "regNo": "607",
+      "sideNo": "607",
+      "vehicleID": "899e4bdb-44ad-47a1-beab-313724fd54d2"
+    },
+    {
+      "regNo": "608",
+      "sideNo": "608",
+      "vehicleID": "d7978234-ddff-4078-a4f7-0c023b7647c9"
+    },
+    {
+      "regNo": "609",
+      "sideNo": "609",
+      "vehicleID": "fa5400b2-bb76-447b-b62d-f5747f1faa3f"
+    },
+    {
+      "regNo": "610",
+      "sideNo": "610",
+      "vehicleID": "0fbe2d8d-a852-47ff-98ab-b2fbc8ecab4c"
+    },
+    {
+      "regNo": "611",
+      "sideNo": "611",
+      "vehicleID": "470497c7-f4e8-40ca-8933-2c9d1f9f086c"
+    },
+    {
+      "regNo": "612",
+      "sideNo": "612",
+      "vehicleID": "04ec4ad0-4e80-413d-a6c7-17aefd460c97"
+    },
+    {
+      "regNo": "613",
+      "sideNo": "613",
+      "vehicleID": "3589101a-a7ef-45b8-8e26-a3349228ab2d"
+    },
+    {
+      "regNo": "614",
+      "sideNo": "614",
+      "vehicleID": "99e2410b-3f7a-4520-8dc2-75bb2069d079"
+    },
+    {
+      "regNo": "615",
+      "sideNo": "615",
+      "vehicleID": "4dc44f62-04db-4574-8b88-7e0494aa511d"
+    },
+    {
+      "regNo": "616",
+      "sideNo": "616",
+      "vehicleID": "e09f2f92-b0da-4926-815c-c7bcfbc6cef2"
+    },
+    {
+      "regNo": "621",
+      "sideNo": "621",
+      "vehicleID": "ea2e3f7d-4275-4d6d-9af4-f3f5ae6e5631"
+    },
+    {
+      "regNo": "622",
+      "sideNo": "622",
+      "vehicleID": "adc63f0b-4065-46c7-8651-8c7a91396cd5"
+    },
+    {
+      "regNo": "623",
+      "sideNo": "623",
+      "vehicleID": "6a76c92d-baa6-4dfa-b637-3aa1ee150002"
+    },
+    {
+      "regNo": "624",
+      "sideNo": "624",
+      "vehicleID": "4a7a4c9d-1b9a-4d93-87f1-7c834087f831"
+    },
+    {
+      "regNo": "625",
+      "sideNo": "625",
+      "vehicleID": "0a987e68-d621-4909-aecd-a99d16fe8a75"
+    },
+    {
+      "regNo": "626",
+      "sideNo": "626",
+      "vehicleID": "c1344de7-b2e0-4fd4-90a5-688b1eb81c3d"
+    },
+    {
+      "regNo": "627",
+      "sideNo": "627",
+      "vehicleID": "f1f41756-c2fe-4ad3-95d2-61eaec5c543a"
+    },
+    {
+      "regNo": "628",
+      "sideNo": "628",
+      "vehicleID": "7627fb40-bbcc-4177-801b-c0c44cc1f4d5"
+    },
+    {
+      "regNo": "636",
+      "sideNo": "636",
+      "vehicleID": "0ae035d2-1bac-4d33-8d58-a01b42b9ccae"
+    },
+    {
+      "regNo": "638",
+      "sideNo": "638",
+      "vehicleID": "d65de668-d36a-40b5-887b-1b4e72f917ff"
+    },
+    {
+      "regNo": "639",
+      "sideNo": "639",
+      "vehicleID": "b58ff8ef-915e-4439-ac56-993a6e2f7e92"
+    },
+    {
+      "regNo": "641",
+      "sideNo": "641",
+      "vehicleID": "6c91bc95-ccdb-4be2-bd68-065361b4b89f"
+    },
+    {
+      "regNo": "644",
+      "sideNo": "644",
+      "vehicleID": "6f0742fa-62d3-441b-bdb5-303abeec266e"
+    },
+    {
+      "regNo": "645",
+      "sideNo": "645",
+      "vehicleID": "9a9f972f-65ed-4a4d-a7e5-f8fdf04ea4c1"
+    },
+    {
+      "regNo": "646",
+      "sideNo": "646",
+      "vehicleID": "b4f4777d-1123-4d4e-8ed8-98deb3a4fd4a"
+    },
+    {
+      "regNo": "647",
+      "sideNo": "647",
+      "vehicleID": "103997ee-16a2-458c-952f-d1091d59c74f"
+    },
+    {
+      "regNo": "648",
+      "sideNo": "648",
+      "vehicleID": "2aa0a871-2fe7-4366-a907-a3dffd8c6d83"
+    },
+    {
+      "regNo": "649",
+      "sideNo": "649",
+      "vehicleID": "9e105a3a-8ae9-4ca6-b7f8-5a1c9eef0629"
+    },
+    {
+      "regNo": "675",
+      "sideNo": "675",
+      "vehicleID": "9ecf27ed-88d5-482c-9020-960a0ed98d36"
+    },
+    {
+      "regNo": "676",
+      "sideNo": "676",
+      "vehicleID": "7bd347f6-7001-46c6-b988-48ed176f2dac"
+    },
+    {
+      "regNo": "678",
+      "sideNo": "678",
+      "vehicleID": "69957b2d-0fa9-412b-bea6-2a2b729ab10b"
+    },
+    {
+      "regNo": "679",
+      "sideNo": "679",
+      "vehicleID": "b93e8a6a-c4d9-4962-bb62-3529fe8b15c2"
+    },
+    {
+      "regNo": "680",
+      "sideNo": "680",
+      "vehicleID": "c86b40c8-b107-448a-a5dc-03c3963bc4c7"
+    },
+    {
+      "regNo": "681",
+      "sideNo": "681",
+      "vehicleID": "316d174a-10e5-4fd2-a4af-4c1f8f9552b9"
+    },
+    {
+      "regNo": "683",
+      "sideNo": "683",
+      "vehicleID": "ccf5be27-cd93-4ecf-8801-83d0b43ab2ab"
+    },
+    {
+      "regNo": "684",
+      "sideNo": "684",
+      "vehicleID": "03383443-8bec-4253-8b6d-d9bce6c84579"
+    },
+    {
+      "regNo": "685",
+      "sideNo": "685",
+      "vehicleID": "f26aece3-32b2-4533-9f33-cbd3f0c3c4f3"
+    },
+    {
+      "regNo": "686",
+      "sideNo": "686",
+      "vehicleID": "32a20723-f1ae-4129-8327-878da4de4772"
+    },
+    {
+      "regNo": "688",
+      "sideNo": "688",
+      "vehicleID": "51974ce8-2a77-434f-93b5-4b89da273d07"
+    },
+    {
+      "regNo": "689",
+      "sideNo": "689",
+      "vehicleID": "0f105961-9dac-43dd-87db-86946e5a2781"
+    },
+    {
+      "regNo": "692",
+      "sideNo": "692",
+      "vehicleID": "08cf01c1-1281-4558-8262-f374a2f7238c"
+    },
+    {
+      "regNo": "693",
+      "sideNo": "693",
+      "vehicleID": "a29ba5b8-91bf-4223-a985-d3aa7301dcdb"
+    },
+    {
+      "regNo": "694",
+      "sideNo": "694",
+      "vehicleID": "36bea5fd-3aa4-4188-a7fa-88d816438677"
+    },
+    {
+      "regNo": "695",
+      "sideNo": "695",
+      "vehicleID": "6d0e4f48-121a-42e6-bbe3-4a15075b1782"
+    },
+    {
+      "regNo": "696",
+      "sideNo": "696",
+      "vehicleID": "bab2b73d-7434-4c73-b479-23db1aa1be46"
+    },
+    {
+      "regNo": "697",
+      "sideNo": "697",
+      "vehicleID": "53c7e56b-0b67-445f-bd7d-6266942a68eb"
+    },
+    {
+      "regNo": "601/602",
+      "sideNo": "601/602",
+      "vehicleID": "d7ae42c4-d9bd-4a3a-89ee-5a404a8ea6c9"
+    },
+    {
+      "regNo": "603/604",
+      "sideNo": "603/604",
+      "vehicleID": "1dc296e9-972a-401a-8edb-567254849b5d"
+    },
+    {
+      "regNo": "605/606",
+      "sideNo": "605/606",
+      "vehicleID": "283d94ac-9262-4209-98d8-ab5048402c55"
+    },
+    {
+      "regNo": "607/608",
+      "sideNo": "607/608",
+      "vehicleID": "df018434-ab3f-4c66-ae09-a5c9f4690a76"
+    },
+    {
+      "regNo": "609/610",
+      "sideNo": "609/610",
+      "vehicleID": "3c54be77-0575-4f8d-91c0-a949f347bacb"
+    },
+    {
+      "regNo": "611/612",
+      "sideNo": "611/612",
+      "vehicleID": "e65b4e56-f940-4402-aeb5-d43a94db72c1"
+    },
+    {
+      "regNo": "613/614",
+      "sideNo": "613/614",
+      "vehicleID": "9c1f6e28-dd83-4f4a-8317-8c891ca17fe8"
+    },
+    {
+      "regNo": "615/616",
+      "sideNo": "615/616",
+      "vehicleID": "ec6f0a9a-3008-478f-b72e-2650765b26c6"
+    },
+    {
+      "regNo": "641/636",
+      "sideNo": "641/636",
+      "vehicleID": "7cfd4e74-282a-41a3-ad50-790f9c853439"
+    },
+    {
+      "regNo": "644/645",
+      "sideNo": "644/645",
+      "vehicleID": "582ea94c-f887-4348-9b9b-810e4eb6e1d1"
+    },
+    {
+      "regNo": "646/647",
+      "sideNo": "646/647",
+      "vehicleID": "510319c3-b871-4313-8456-fa8a14e1d639"
+    },
+    {
+      "regNo": "648/649",
+      "sideNo": "648/649",
+      "vehicleID": "64da1160-853a-436d-b7ab-7c8051dac98f"
+    },
+    {
+      "regNo": "680/681",
+      "sideNo": "680/681",
+      "vehicleID": "004b4e7d-cf66-43b5-a00d-5db6e1e398cb"
+    },
+    {
+      "regNo": "684/688",
+      "sideNo": "684/688",
+      "vehicleID": "0f7bacf1-b044-45d7-82d3-bbcbf70717c4"
+    },
+    {
+      "regNo": "",
+      "sideNo": "685/686",
+      "vehicleID": "92080686-56a2-491c-a0ce-80ca06c1da7d"
+    },
+    {
+      "regNo": "689/683",
+      "sideNo": "689/683",
+      "vehicleID": "3e661b44-020d-42c1-a337-0b718307bf71"
+    },
+    {
+      "regNo": "",
+      "sideNo": "692/696",
+      "vehicleID": "be9c54e6-33ac-4d51-b008-b5c93ecb0f7e"
+    },
+    {
+      "regNo": "",
+      "sideNo": "693/694",
+      "vehicleID": "3bdd0e99-e7c1-4517-9030-845b8def2c8c"
+    },
+    {
+      "regNo": "695/697",
+      "sideNo": "695/697",
+      "vehicleID": "83c33fa9-2efa-4979-8204-23c4062ce30a"
+    },
+    {
+      "regNo": "SC 9732S",
+      "sideNo": "143",
+      "vehicleID": "af16b1ae-d34c-46bd-aa12-3c34b2571fa2"
+    },
+    {
+      "regNo": "SC 9731S",
+      "sideNo": "144",
+      "vehicleID": "7f75fb31-4a50-4c28-8576-7028a99ab80b"
+    },
+    {
+      "regNo": "SC 1891T",
+      "sideNo": "145",
+      "vehicleID": "2ec671e7-0353-4fdf-879c-94791eca5f21"
+    },
+    {
+      "regNo": "SC 1892T",
+      "sideNo": "146",
+      "vehicleID": "d9af4890-0276-4d30-9db4-bf758650c35b"
+    },
+    {
+      "regNo": "SC 1890T",
+      "sideNo": "147",
+      "vehicleID": "cc4d3003-239c-4c85-ace5-dc097f311fc2"
+    },
+    {
+      "regNo": "SC 1894T",
+      "sideNo": "211",
+      "vehicleID": "9135aa78-1eec-48a3-9ad3-5d30d2612f2e"
+    },
+    {
+      "regNo": "SC 1895T",
+      "sideNo": "212",
+      "vehicleID": "4607a1b0-4f00-4e56-9296-73617834c776"
+    },
+    {
+      "regNo": "SC 1896T",
+      "sideNo": "213",
+      "vehicleID": "8d259558-616c-446c-af01-f20a3bd1a4c1"
+    },
+    {
+      "regNo": "SC 1897T",
+      "sideNo": "214",
+      "vehicleID": "e561c838-01c3-4e48-8300-4edc09c1d67f"
+    },
+    {
+      "regNo": "SC 1898T",
+      "sideNo": "215",
+      "vehicleID": "909b0750-5e7c-4e3d-8523-dfbce03a54c7"
+    },
+    {
+      "regNo": "SC 1893T",
+      "sideNo": "216",
+      "vehicleID": "302045dd-6bc5-4f3d-b359-2ea2c20f6976"
+    },
+    {
+      "regNo": "621",
+      "sideNo": "621",
+      "vehicleID": "23f79d32-1810-4392-9fb9-098edc88e00d"
+    },
+    {
+      "regNo": "622",
+      "sideNo": "622",
+      "vehicleID": "be118d72-655e-416c-915d-9cb0067014ff"
+    },
+    {
+      "regNo": "623",
+      "sideNo": "623",
+      "vehicleID": "b051f3b1-acd8-4a6d-8bea-05a5eefadc3d"
+    },
+    {
+      "regNo": "624",
+      "sideNo": "624",
+      "vehicleID": "cd388ec3-d616-4698-9d84-ce37b7127b2c"
+    },
+    {
+      "regNo": "625",
+      "sideNo": "625",
+      "vehicleID": "e97d5e56-afca-49bf-bc47-c54eb9d70a99"
+    },
+    {
+      "regNo": "626",
+      "sideNo": "626",
+      "vehicleID": "55d4e776-0d48-4c29-88f8-94e1c9e7f37e"
+    },
+    {
+      "regNo": "627",
+      "sideNo": "627",
+      "vehicleID": "83598d58-1ad8-4d2b-882e-e5724e441c20"
+    },
+    {
+      "regNo": "638/639",
+      "sideNo": "638/639",
+      "vehicleID": "ed977ddd-9df7-4a3f-a548-3e9042ba8493"
+    },
+    {
+      "regNo": "675/676",
+      "sideNo": "675/676",
+      "vehicleID": "abf348e1-90dd-4b07-94ca-f95507ecfd9d"
+    },
+    {
+      "regNo": "SC 8733T",
+      "sideNo": "102",
+      "vehicleID": "f98a51a7-a34a-4990-a2b4-e942f5e33a26"
+    },
+    {
+      "regNo": "SC 8734T",
+      "sideNo": "103",
+      "vehicleID": "386591df-c783-473c-af9f-0aa03752dbda"
+    },
+    {
+      "regNo": "SC 8735T",
+      "sideNo": "104",
+      "vehicleID": "e80f872d-3902-43ad-964a-8268d8bd12d4"
+    },
+    {
+      "regNo": "SC 8736T",
+      "sideNo": "105",
+      "vehicleID": "c5069c74-1ff7-40ef-bea0-30cd703e1c5b"
+    },
+    {
+      "regNo": "SC 2047U",
+      "sideNo": "106",
+      "vehicleID": "c060ca4f-3d06-49a8-8de8-e61ba8657048"
+    },
+    {
+      "regNo": "SC 2048U",
+      "sideNo": "107",
+      "vehicleID": "33bb50bc-f6b5-4c6d-8b89-83b867a480d0"
+    },
+    {
+      "regNo": "SC 2046U",
+      "sideNo": "148",
+      "vehicleID": "e59f4fd9-ab8b-4ecb-a7cb-2e4821de6cf3"
+    },
+    {
+      "regNo": "SC 0540U",
+      "sideNo": "217",
+      "vehicleID": "c335ec21-7b42-49ff-8169-991a3908d805"
+    },
+    {
+      "regNo": "SC 0533U",
+      "sideNo": "218",
+      "vehicleID": "a8c4ceff-3ac5-4ba3-b101-9abd4f922fae"
+    },
+    {
+      "regNo": "SC 26E",
+      "sideNo": "299",
+      "vehicleID": "7510fe28-415e-4a85-8940-687069aead31"
+    },
+    {
+      "regNo": "SC 3787U",
+      "sideNo": "219",
+      "vehicleID": "907d2588-06bc-47a5-8d15-79127e742ada"
+    },
+    {
+      "regNo": "WWE 4K",
+      "sideNo": "298",
+      "vehicleID": "f98b3e98-9a86-4743-9fff-5e4622db1936"
+    },
+    {
+      "regNo": "202",
+      "sideNo": "202",
+      "vehicleID": "c5f131a7-ffed-4d9e-b89f-9f48572fe831"
+    },
+    {
+      "regNo": "628",
+      "sideNo": "628",
+      "vehicleID": "050390fd-03aa-47e5-a940-b9f94caa19cf"
+    },
+    {
+      "regNo": "SC 2449V",
+      "sideNo": "149",
+      "vehicleID": "4d638265-b885-4a3d-8929-c802ea519624"
+    },
+    {
+      "regNo": "SC 2450V",
+      "sideNo": "150",
+      "vehicleID": "219243ea-3bec-45ab-9fa3-cfc1563623c0"
+    },
+    {
+      "regNo": "SC 2451V",
+      "sideNo": "151",
+      "vehicleID": "efadcaaa-4dc1-4943-af2a-90be1f29df13"
+    },
+    {
+      "regNo": "SC 2452V",
+      "sideNo": "152",
+      "vehicleID": "af3e6cfb-2ac2-46e4-9612-f6c6d3f5852c"
+    },
+    {
+      "regNo": "SC 2455V",
+      "sideNo": "155",
+      "vehicleID": "561a6a94-9fa9-4262-b0ae-e7f4d1dd458b"
+    },
+    {
+      "regNo": "SC 2456V",
+      "sideNo": "156",
+      "vehicleID": "26081a47-b409-4495-bd0f-7a9ce406c14a"
+    },
+    {
+      "regNo": "SC 2457V",
+      "sideNo": "157",
+      "vehicleID": "025a59ac-21ef-4216-86b9-ae43c738d19e"
+    },
+    {
+      "regNo": "SC 2458V",
+      "sideNo": "158",
+      "vehicleID": "361b22be-797d-442d-962a-7dca09932f54"
+    },
+    {
+      "regNo": "SC 2459V",
+      "sideNo": "159",
+      "vehicleID": "8088e7a4-584e-4a2b-b3fd-5798ba1d73ff"
+    },
+    {
+      "regNo": "SC 2460V",
+      "sideNo": "160",
+      "vehicleID": "245d09f8-e7d8-4114-9fef-9f51efebd0c2"
+    },
+    {
+      "regNo": "SC 4853W",
+      "sideNo": "220",
+      "vehicleID": "7da4b67c-6349-468e-a708-91c61d854fde"
+    },
+    {
+      "regNo": "SC 4222X",
+      "sideNo": "222",
+      "vehicleID": "3cbae894-732f-4ee8-a587-ca6862281b54"
+    },
+    {
+      "regNo": "SC 4854W",
+      "sideNo": "221",
+      "vehicleID": "12ec0969-fb3c-4d8f-a908-a5c1ed5685e5"
+    },
+    {
+      "regNo": "SC 4223X",
+      "sideNo": "223",
+      "vehicleID": "cc5c908d-52a0-4054-ab70-e9c6d9927b0c"
+    },
+    {
+      "regNo": "SC 4224X",
+      "sideNo": "224",
+      "vehicleID": "c4aac308-8f98-4ab1-85e6-ff16a02cf430"
+    },
+    {
+      "regNo": "SC 4850W",
+      "sideNo": "225",
+      "vehicleID": "68bcf4d1-7feb-4f73-8413-aa73814f22de"
+    },
+    {
+      "regNo": "SC 4852W",
+      "sideNo": "226",
+      "vehicleID": "b5631268-8c6b-4ff2-b9ad-06c450a93d8a"
+    },
+    {
+      "regNo": "SC 4227X",
+      "sideNo": "227",
+      "vehicleID": "47e83eb6-d67c-45cc-8d18-0b22277b1f51"
+    },
+    {
+      "regNo": "SC 4228X",
+      "sideNo": "228",
+      "vehicleID": "96fd61d8-9b2e-4bcd-a931-617ed7e5c8ed"
+    },
+    {
+      "regNo": "SK 019NR",
+      "sideNo": "402",
+      "vehicleID": "80f91020-c251-4f7a-95fa-e05f1ff68247"
+    },
+    {
+      "regNo": "SC 4851W",
+      "sideNo": "229",
+      "vehicleID": "c29cd2b3-7307-4deb-b323-048fadaa4a6f"
+    },
+    {
+      "regNo": "WWL 4817K",
+      "sideNo": "415",
+      "vehicleID": "30f8f545-24cb-449d-a9f9-21776eeeff9d"
+    },
+    {
+      "regNo": "SC 3958R",
+      "sideNo": "701",
+      "vehicleID": "8d9351b4-db41-4e61-aeed-28406a3cd246"
+    },
+    {
+      "regNo": "SC 8590P",
+      "sideNo": "700",
+      "vehicleID": "8e7ed683-e084-4c20-8718-f4df84912b40"
+    },
+    {
+      "regNo": "SC 7461P",
+      "sideNo": "784",
+      "vehicleID": "625fece3-2a0d-46aa-86c7-150356475e2f"
+    },
+    {
+      "regNo": "SC 3513L",
+      "sideNo": "788",
+      "vehicleID": "2de8e761-e209-4dcb-b98d-66cf64a219ee"
+    },
+    {
+      "regNo": "CZA 899C",
+      "sideNo": "731",
+      "vehicleID": "79fb4440-c9e9-4361-8142-4149c24f03c2"
+    },
+    {
+      "regNo": "SC 38676",
+      "sideNo": "724",
+      "vehicleID": "610b5f22-2c0f-4498-bb62-d555d43c49d1"
+    },
+    {
+      "regNo": "SC 06017",
+      "sideNo": "770",
+      "vehicleID": "6fc3a78b-9b02-4fac-a460-4a3a78abbb7a"
+    },
+    {
+      "regNo": "SC 78163",
+      "sideNo": "786",
+      "vehicleID": "ddfda1d6-8880-40aa-811c-29787dd4ca79"
+    },
+    {
+      "regNo": "SC 06121",
+      "sideNo": "723",
+      "vehicleID": "b07eb5ad-1d58-4eba-be55-2a8414478dca"
+    },
+    {
+      "regNo": "SC 58521",
+      "sideNo": "797",
+      "vehicleID": "872195ab-3336-4798-9045-b6b286619c80"
+    },
+    {
+      "regNo": "SC 08957",
+      "sideNo": "736",
+      "vehicleID": "c1b77662-fab1-45a7-a483-f5eedfa14ed3"
+    },
+    {
+      "regNo": "SC 06118",
+      "sideNo": "742",
+      "vehicleID": "663f4ec0-5423-4839-9db6-489d743f5524"
+    },
+    {
+      "regNo": "SC 3099M",
+      "sideNo": "750",
+      "vehicleID": "223ef3fb-0cf0-4d3b-bb44-a01138537d6f"
+    },
+    {
+      "regNo": "SC 9914P",
+      "sideNo": "761",
+      "vehicleID": "3ae57bf3-1687-4275-a7a8-f7c059e371dd"
+    },
+    {
+      "regNo": "SPI 08493",
+      "sideNo": "230",
+      "vehicleID": "64e5372b-aa85-4614-8a1b-4578923da9ce"
+    },
+    {
+      "regNo": "SPI 12308",
+      "sideNo": "233",
+      "vehicleID": "524db9eb-41c4-40aa-9508-b46799fe5ef8"
+    },
+    {
+      "regNo": "SPI 12378",
+      "sideNo": "235",
+      "vehicleID": "b560d50e-d67b-4555-beb5-722c04b30536"
+    },
+    {
+      "regNo": "SC 731AP",
+      "sideNo": "231",
+      "vehicleID": "39da3aab-9713-41ca-a28a-c706a909714a"
+    },
+    {
+      "regNo": "SPI 12306",
+      "sideNo": "234",
+      "vehicleID": "089bd886-2a80-48be-b8e1-f3b64a0fd9c1"
+    },
+    {
+      "regNo": "SPI 12379",
+      "sideNo": "236",
+      "vehicleID": "8f73a64f-caf6-4559-ad10-9a98f32181ba"
+    },
+    {
+      "regNo": "651",
+      "sideNo": "651",
+      "vehicleID": "df5e0873-c0d6-4db0-bb24-6cdc1ae1cc06"
+    },
+    {
+      "regNo": "",
+      "sideNo": "651",
+      "vehicleID": "407dceca-a42b-4686-b93c-830d1b5030b3"
+    },
+    {
+      "regNo": "",
+      "sideNo": "652",
+      "vehicleID": "0b316025-7eb6-4593-93b8-ebff22a73f8c"
+    },
+    {
+      "regNo": "",
+      "sideNo": "652",
+      "vehicleID": "0390d0cd-70cd-411c-b0cc-8840e0a04885"
+    },
+    {
+      "regNo": "",
+      "sideNo": "653",
+      "vehicleID": "fa25b0db-9c83-4409-83e3-a63400f0d439"
+    },
+    {
+      "regNo": "",
+      "sideNo": "653",
+      "vehicleID": "beb25b39-b86e-4586-b418-f605ae53f58f"
+    },
+    {
+      "regNo": "",
+      "sideNo": "654",
+      "vehicleID": "9c374813-a9fe-497e-b519-31b791578819"
+    },
+    {
+      "regNo": "",
+      "sideNo": "655",
+      "vehicleID": "ed9c8979-92cf-44f7-92ba-727699dc3206"
+    },
+    {
+      "regNo": "",
+      "sideNo": "654",
+      "vehicleID": "1c68c0f4-e1a4-428f-8fa6-81c2c3ce0934"
+    },
+    {
+      "regNo": "",
+      "sideNo": "655",
+      "vehicleID": "1daf5caa-272e-4700-9dc3-d6d8dc87977e"
+    },
+    {
+      "regNo": "",
+      "sideNo": "615*",
+      "vehicleID": "9edce6c8-e804-45bf-a37b-869ebc598568"
+    },
+    {
+      "regNo": "",
+      "sideNo": "656",
+      "vehicleID": "0974ac1c-b7dc-4d69-9c91-29cc6079a3d7"
+    },
+    {
+      "regNo": "",
+      "sideNo": "657",
+      "vehicleID": "0c68ba1c-3e8b-4a83-b464-9f4e6d4a3f9f"
+    },
+    {
+      "regNo": "",
+      "sideNo": "658",
+      "vehicleID": "8297fe1a-050b-43e6-a9a0-e833dab90bd9"
+    },
+    {
+      "regNo": "",
+      "sideNo": "656",
+      "vehicleID": "13f00412-204a-457d-a57c-616d8a230778"
+    },
+    {
+      "regNo": "",
+      "sideNo": "657",
+      "vehicleID": "c2861976-4779-4cbf-a3cf-b1a865f65330"
+    },
+    {
+      "regNo": "",
+      "sideNo": "658",
+      "vehicleID": "98f4257d-745a-4896-85d2-3081949209d6"
+    },
+    {
+      "regNo": "SPI 12307",
+      "sideNo": "232",
+      "vehicleID": "6313e774-7100-462d-b4bf-6a4c0de067d1"
+    },
+    {
+      "regNo": "611",
+      "sideNo": "611",
+      "vehicleID": "7bb63284-6a9e-4318-83d1-c7d4308985e8"
+    },
+    {
+      "regNo": "644",
+      "sideNo": "644",
+      "vehicleID": "daaad901-94e8-4950-92a7-b0a46dc77677"
+    },
+    {
+      "regNo": "615",
+      "sideNo": "615",
+      "vehicleID": "2bfdc2ac-1b83-431f-b45e-a6ea89e97fe4"
+    },
+    {
+      "regNo": "648",
+      "sideNo": "648",
+      "vehicleID": "2039f3af-2347-4ea7-849e-e9b621b2cd60"
+    },
+    {
+      "regNo": "684",
+      "sideNo": "684",
+      "vehicleID": "e6c0a250-f18e-470f-b1cf-eda724cf1ea3"
+    },
+    {
+      "regNo": "685",
+      "sideNo": "685",
+      "vehicleID": "31bf267f-a03a-49af-b4c8-88bb1ac7980c"
+    },
+    {
+      "regNo": "692",
+      "sideNo": "692",
+      "vehicleID": "4dd05e76-fa7d-41d1-9eda-526e243ad01f"
+    },
+    {
+      "regNo": "693",
+      "sideNo": "693",
+      "vehicleID": "4a01160f-0fb5-4c56-94b8-923f9181c745"
+    },
+    {
+      "regNo": "RSA 004EE",
+      "sideNo": "500",
+      "vehicleID": "dc3c2a47-c98c-4fe4-b035-8364983d513c"
+    },
+    {
+      "regNo": "",
+      "sideNo": "659",
+      "vehicleID": "ab69d7c5-d945-4a7f-8fda-068dbc5ce92c"
+    },
+    {
+      "regNo": "",
+      "sideNo": "660",
+      "vehicleID": "4de91b39-eb8f-437f-9ad3-832e051f8332"
+    },
+    {
+      "regNo": "",
+      "sideNo": "659",
+      "vehicleID": "90bec8e0-96da-4677-a7ba-d86ce58e4cd9"
+    },
+    {
+      "regNo": "",
+      "sideNo": "660",
+      "vehicleID": "74660c94-b04e-41bd-82a3-5234a1c9067d"
+    },
+    {
+      "regNo": "WPR3918N",
+      "sideNo": "403",
+      "vehicleID": "10abf933-c431-44c1-a138-27c5b0fe703f"
+    },
+    {
+      "regNo": "RZ 002AT",
+      "sideNo": "501",
+      "vehicleID": "e3651cbb-0ff1-4ca7-8af2-6b7d3b68f757"
+    },
+    {
+      "regNo": "RZ 003AT",
+      "sideNo": "502",
+      "vehicleID": "50a561ba-8d31-4195-b40b-43a9f6175410"
+    },
+    {
+      "regNo": "RZ 004AT",
+      "sideNo": "503",
+      "vehicleID": "a601269c-46a9-47f4-bacb-8f46035bbe29"
+    },
+    {
+      "regNo": "RZ 005AT",
+      "sideNo": "504",
+      "vehicleID": "428a5957-9ff8-4338-9b8c-e8a2a1f02d2b"
+    },
+    {
+      "regNo": "RZ 009AT",
+      "sideNo": "508",
+      "vehicleID": "4c37ad84-9232-4e4a-8669-c9b28a97a814"
+    },
+    {
+      "regNo": "RZ 007AT",
+      "sideNo": "506",
+      "vehicleID": "04c31acb-dec4-4f34-8ce5-c52ec83f3e5d"
+    },
+    {
+      "regNo": "RZ 006AT",
+      "sideNo": "505",
+      "vehicleID": "0f74dd9a-b228-47f8-a872-f89e07cdd41b"
+    },
+    {
+      "regNo": "RZ 008AT",
+      "sideNo": "507",
+      "vehicleID": "2c2d6d73-1379-4435-b2f7-2cbc2df36835"
+    },
+    {
+      "regNo": "RZ 010AT",
+      "sideNo": "509",
+      "vehicleID": "c46aeba8-ba95-4152-a0a2-a816261debf5"
+    },
+    {
+      "regNo": "RZ 011AT",
+      "sideNo": "510",
+      "vehicleID": "7337a793-9883-4b27-8f0f-b501d538d0cf"
+    },
+    {
+      "regNo": "RZ 012AT",
+      "sideNo": "511",
+      "vehicleID": "43e3e6ea-b355-44ea-b0c6-4788be17c0d9"
+    },
+    {
+      "regNo": "RZ 015AT",
+      "sideNo": "514",
+      "vehicleID": "1746de9a-aa9f-4fa1-8a57-9b67e6e870ca"
+    },
+    {
+      "regNo": "RZ 013AT",
+      "sideNo": "512",
+      "vehicleID": "99d92775-faaf-4a21-a334-f18b8e074445"
+    },
+    {
+      "regNo": "RZ 014AT",
+      "sideNo": "513",
+      "vehicleID": "bd46bd55-7246-4341-b4c5-382abce76185"
+    },
+    {
+      "regNo": "RZ 016AT",
+      "sideNo": "515",
+      "vehicleID": "d41e12e8-0d46-4b80-9bf6-32564ac38b90"
+    },
+    {
+      "regNo": "",
+      "sideNo": "615/616",
+      "vehicleID": "899a71d5-105b-4290-9c15-3e0c300bfef7"
+    },
+    {
+      "regNo": "",
+      "sideNo": "611/612",
+      "vehicleID": "dabbd6d4-e56e-4d76-addc-de11367578f9"
+    },
+    {
+      "regNo": "",
+      "sideNo": "684/688",
+      "vehicleID": "c992d027-c78d-468b-88de-72ad1244712e"
+    },
+    {
+      "regNo": "",
+      "sideNo": "644/645",
+      "vehicleID": "6d57bad9-2b80-437d-9116-41c74b1cab32"
+    },
+    {
+      "regNo": "",
+      "sideNo": "648/649",
+      "vehicleID": "f7e781c9-5e6b-4366-ba42-3267a2e38c69"
+    },
+    {
+      "regNo": "SC400AX",
+      "sideNo": "400",
+      "vehicleID": "cf67c431-81f0-48fc-b3ad-59f7a3fb1a24"
+    },
+    {
+      "regNo": "SC 3423P",
+      "sideNo": "23",
+      "vehicleID": "9860670e-18a4-4aa5-a33d-46f41c73005b"
+    },
+    {
+      "regNo": "WZ 136EX",
+      "sideNo": "IKELEK",
+      "vehicleID": "818d727f-2ad6-4767-8592-9ca40d5951ad"
+    },
+    {
+      "regNo": "WPR 9020P",
+      "sideNo": "0",
+      "vehicleID": "66e37923-a35c-4aa9-a851-e18117b4cbf6"
+    },
+    {
+      "regNo": "SC 407CN",
+      "sideNo": "407",
+      "vehicleID": "7c6ff130-ff0d-4c6d-95ba-15857630df81"
+    },
+    {
+      "regNo": "SC 132CS",
+      "sideNo": "232",
+      "vehicleID": "31dad849-8158-4641-83c1-7be72c2db1f5"
+    },
+    {
+      "regNo": "PN8049A",
+      "sideNo": "WODÓR",
+      "vehicleID": "a94e80a4-9dfa-401e-a8f5-89e6c897d054"
+    },
+    {
+      "regNo": "SC 233CU",
+      "sideNo": "233",
+      "vehicleID": "077691d8-3db3-48e6-b5bc-92c15dc37f85"
+    },
+    {
+      "regNo": "SC 234CU",
+      "sideNo": "234",
+      "vehicleID": "6c8bc89b-771f-4a8d-aa2d-3ba95d32759d"
+    },
+    {
+      "regNo": "SC 235CU",
+      "sideNo": "235",
+      "vehicleID": "a8051acd-cbcd-4c43-ad16-e22dc61edb16"
+    },
+    {
+      "regNo": "SC 272EE",
+      "sideNo": "516",
+      "vehicleID": "2fde329a-50e4-4cc7-a1ed-522ee5b882e2"
+    },
+    {
+      "regNo": "SC 273EE",
+      "sideNo": "517",
+      "vehicleID": "bf226690-dd7a-4972-8d37-f42baac178df"
+    },
+    {
+      "regNo": "SC 270EE",
+      "sideNo": "518",
+      "vehicleID": "c06ede17-0514-4bc5-8e35-f12ccad3e3f4"
+    },
+    {
+      "regNo": "SC 271EE",
+      "sideNo": "519",
+      "vehicleID": "22dec186-d7fa-4cef-9f50-33eb693172ac"
+    },
+    {
+      "regNo": "SC 411EH",
+      "sideNo": "411",
+      "vehicleID": "f10be162-c26e-4674-93dc-91d9540c8cd6"
+    },
+    {
+      "regNo": "SC 412EH",
+      "sideNo": "412",
+      "vehicleID": "c8e459be-6a60-4723-87cd-1bb9c81421b4"
+    },
+    {
+      "regNo": "SPI 24045",
+      "sideNo": "413",
+      "vehicleID": "233efa86-dee9-45d5-9ddd-eebb22cd3c9c"
+    },
+    {
+      "regNo": "SPI 24035",
+      "sideNo": "414",
+      "vehicleID": "e3751bca-fb79-4ddd-9c17-81881207d078"
+    }
+  ]

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg2"
+   sodipodi:docname="gps_icon.svg"
+   viewBox="0 0 22.000329 22.001159"
+   version="1.1"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   width="22.00033"
+   height="22.001158">
+  <defs
+     id="defs12" />
+  <sodipodi:namedview
+     id="base"
+     bordercolor="#666666"
+     inkscape:pageshadow="2"
+     inkscape:window-y="-8"
+     pagecolor="#ffffff"
+     inkscape:window-height="1057"
+     inkscape:window-maximized="1"
+     inkscape:zoom="31.678384"
+     inkscape:window-x="1912"
+     showgrid="false"
+     borderopacity="1.0"
+     inkscape:current-layer="layer1"
+     inkscape:cx="8.965837"
+     inkscape:cy="11.537978"
+     inkscape:window-width="1920"
+     inkscape:pageopacity="0.0"
+     inkscape:document-units="px"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <g
+     id="layer1"
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     transform="translate(-251.20446,-703.95631)">
+    <path
+       id="path3812"
+       style="color:#000000;text-indent:0;text-transform:none;fill:#000000;stroke-width:0.07574038"
+       d="m 268.11013,713.80215 c -0.44707,-0.35038 -1.06945,-0.40332 -1.47111,-0.002 l -0.71512,0.71512 c -0.40164,0.40165 -0.33676,1.01492 0.002,1.47111 l 3.62819,4.89063 c 0.33844,0.45618 1.06779,0.40164 1.46944,0 l 1.86276,-1.86276 c 0.40165,-0.40164 0.44707,-1.11906 0,-1.46944 z m -0.64268,0.64268 4.77589,3.74301 c 0.0631,0.0495 0.0567,0.12739 0,0.18411 l -1.86276,1.86276 c -0.0567,0.0567 -0.13631,0.0644 -0.18411,0 l -3.62819,-4.89064 c -0.0478,-0.0644 -0.0584,-0.12906 -0.002,-0.18577 l 0.71512,-0.71513 c 0.0567,-0.0567 0.12265,-0.0478 0.18578,0.002 z"
+       inkscape:export-ydpi="41.860001"
+       sodipodi:nodetypes="ssssssssssssssssss"
+       inkscape:export-filename="/home/przemo/sat.png"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="41.860001" />
+    <path
+       id="rect2985-0"
+       style="color:#000000;text-indent:0;text-transform:none;fill:#000000;stroke-width:0.07574038"
+       d="m 263.35894,709.05096 c 0.35038,0.44706 0.40331,1.06945 0.002,1.4711 l -0.71513,0.71513 c -0.40164,0.40164 -1.01492,0.33675 -1.4711,-0.002 l -4.89063,-3.62819 c -0.45619,-0.33843 -0.40165,-1.06779 0,-1.46944 l 1.86276,-1.86276 c 0.40164,-0.40164 1.11906,-0.44706 1.46943,0 z m -0.64268,0.64268 -3.74302,-4.77589 c -0.0495,-0.0631 -0.12738,-0.0567 -0.1841,0 l -1.86276,1.86276 c -0.0567,0.0567 -0.0644,0.13631 0,0.1841 l 4.89063,3.62819 c 0.0644,0.0478 0.12906,0.0584 0.18578,0.002 l 0.71512,-0.71513 c 0.0567,-0.0567 0.0478,-0.12264 -0.002,-0.18577 z"
+       inkscape:export-ydpi="41.860001"
+       sodipodi:nodetypes="ssssssssssssssssss"
+       inkscape:export-filename="/home/przemo/sat.png"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="41.860001" />
+    <rect
+       id="rect2985-0-1"
+       style="color:#000000;fill:none;stroke:#000000;stroke-width:0.90888464;stroke-linecap:round;stroke-linejoin:round"
+       transform="rotate(135)"
+       inkscape:export-ydpi="41.860001"
+       inkscape:export-filename="/home/przemo/sat.png"
+       ry="0.71074015"
+       height="2.1236846"
+       width="5.072031"
+       inkscape:export-xdpi="41.860001"
+       y="-692.01917"
+       x="314.24304" />
+    <path
+       id="path3816"
+       style="color:#000000;fill:none;stroke:#000000;stroke-width:1.81776929;stroke-linecap:round;stroke-linejoin:round"
+       d="m 259.01447,714.42928 c -1.02636,1.02636 -1.02469,2.69083 0.002,3.71719 1.02637,1.02636 2.68909,1.02636 3.71552,0"
+       inkscape:export-ydpi="41.860001"
+       sodipodi:nodetypes="csc"
+       inkscape:export-filename="/home/przemo/sat.png"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="41.860001" />
+    <path
+       id="path3818"
+       style="color:#000000;fill:none;stroke:#000000;stroke-width:1.81776929;stroke-linecap:round;stroke-linejoin:round"
+       d="m 256.82178,712.2366 c -2.23752,2.23752 -2.23752,5.86624 0,8.10346 2.23753,2.23752 5.86458,2.23586 8.10195,-0.002"
+       inkscape:export-ydpi="41.860001"
+       sodipodi:nodetypes="csc"
+       inkscape:export-filename="/home/przemo/sat.png"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="41.860001" />
+    <path
+       id="path3818-1"
+       style="color:#000000;fill:none;stroke:#000000;stroke-width:1.81776929;stroke-linecap:round;stroke-linejoin:round"
+       d="m 254.6594,710.18176 c -3.40226,3.40226 -3.40226,8.91995 -1e-5,12.3222 3.40226,3.40226 8.91768,3.39976 12.31994,-0.003"
+       inkscape:export-ydpi="41.860001"
+       sodipodi:nodetypes="csc"
+       inkscape:export-filename="/home/przemo/sat.png"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="41.860001" />
+  </g>
+  <metadata
+     id="metadata12">
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <cc:license
+           rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+        <dc:publisher>
+          <cc:Agent
+             rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title></dc:title>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/publicdomain/zero/1.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>
