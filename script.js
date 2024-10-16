@@ -1,3 +1,38 @@
+// Funkcje do ładowania danych z plików JSON
+const loadLinesData = async () => {
+    const data = await fs.readFile(path.join(__dirname, 'lines.json'), 'utf-8');
+    linesData = JSON.parse(data);
+};
+
+const loadDirectionsData = async () => {
+    const data = await fs.readFile(path.join(__dirname, 'directions.json'), 'utf-8');
+    directionsData = JSON.parse(data);
+};
+
+const loadVehiclesData = async () => {
+    const data = await fs.readFile(path.join(__dirname, 'vehicles.json'), 'utf-8');
+    vehiclesData = JSON.parse(data);
+};
+
+const loadDatabaseData = async () => {
+    const data = await fs.readFile(path.join(__dirname, 'database.json'), 'utf-8');
+    databaseData = JSON.parse(data);
+};
+
+// Ładowanie danych przy uruchomieniu serwera
+Promise.all([
+    loadLinesData(),
+    loadDirectionsData(),
+    loadVehiclesData(),
+    loadDatabaseData()
+])
+.then(() => {
+    console.log('Dane linii, kierunków, pojazdów oraz bazy danych zostały załadowane.');
+})
+.catch(err => {
+    console.error('Błąd podczas ładowania danych:', err);
+});
+
 // Obsługa zapytań proxy dla API MPK
 app.get('/api/timetables', async (req, res) => {
     let { url: fullUrl } = req.query;
