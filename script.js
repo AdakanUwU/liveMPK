@@ -1,3 +1,20 @@
+import express from 'express';
+import path from 'path';
+import { fileURLToPath } from 'url';
+import fs from 'fs/promises';
+import fetch from 'node-fetch'; // Upewnij się, że masz zainstalowany 'node-fetch'
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+const app = express();
+const port = 3000;
+
+let linesData = [];
+let directionsData = [];
+let vehiclesData = [];
+let databaseData = [];
+
 // Funkcje do ładowania danych z plików JSON
 const loadLinesData = async () => {
     const data = await fs.readFile(path.join(__dirname, 'lines.json'), 'utf-8');
@@ -31,6 +48,14 @@ Promise.all([
 })
 .catch(err => {
     console.error('Błąd podczas ładowania danych:', err);
+});
+
+// Dodajemy obsługę statycznych plików
+app.use(express.static(path.join(__dirname)));
+
+// Trasa do wyświetlania pliku HTML
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 // Obsługa zapytań proxy dla API MPK
