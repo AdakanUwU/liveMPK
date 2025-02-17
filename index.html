@@ -41,19 +41,21 @@
                 // Funkcja do formatowania dat
                 const formatDate = (date) => {
                     const year = date.getFullYear();
-                    const month = String(date.getMonth() + 1).padStart(2, '0');
+                    const month = String(date.getMonth() + 1).padStart(2, '0'); // Miesiące są liczone od 0
                     const day = String(date.getDate()).padStart(2, '0');
                     return { year, month, day };
                 };
 
                 // Funkcja do pobierania danych przystanku
                 const fetchBusStopData = async (busStopId) => {
-                    const response = await fetch(`https://live.mpk.czest.pl/api/locations/${busStopId}`);
+                    const response = await fetch('directions.json'); // Wczytanie pliku JSON
                     if (!response.ok) {
-                        console.error("Błąd wczytywania danych przystanku");
-                        return null;
+                        console.error("Błąd wczytywania directions.json");
+                        return null; // W przypadku błędu zwracamy null
                     }
-                    return await response.json();
+                    const data = await response.json();
+                    const busStop = data.find(stop => stop.locationID === busStopId); // Wyszukiwanie przystanku po ID
+                    return busStop ? { name: busStop.name, description: busStop.description } : null; // Zwracamy nazwę i opis
                 };
 
                 // Zaktualizowana funkcja do pobierania i wyświetlania danych
@@ -77,8 +79,7 @@
                         console.log("Skrócony link wykryty. Nowy link:", requestUrl);
                     }
 
-                    // Bezpośrednia komunikacja z API
-                    const response = await fetch(requestUrl);
+                    const response = await fetch(`/api/timetables?url=${encodeURIComponent(requestUrl)}`);
 
                     if (!response.ok) {
                         document.getElementById('output').innerHTML = `<p style="color: red;">Błąd: ${response.status} - ${response.statusText}</p>`;
@@ -87,19 +88,25 @@
 
                     const { date, data } = await response.json();
 
+                    console.log("Dane z API:", data); // Logujemy dane z API dla diagnostyki
+
                     let formattedOutput = '';
                     const vehicleMap = {};
 
                     data.forEach(item => {
+                        console.log("Aktualny item:", item); // Loguj bieżący element, aby zobaczyć jego strukturę
+
                         item.vehicles.forEach(vehicle => {
                             const vehicleID = vehicle.vehicleID;
                             const vehicleModel = vehicle.model || "Nieznany model";
                             const sideNo = vehicle.sideNo || "Nieznany numer taborowy";
-                            const dateTime = vehicle.dateTime;
+                            const dateTime = vehicle.dateTime; // Upewniamy się, że używamy dateTime z pojazdu
                             const runID = vehicle.runID || "Brak runID";
 
                             if (!vehicleMap[item.lineName]) {
-                                vehicleMap[item.lineName] = { vehicles: {} };
+                                vehicleMap[item.lineName] = {
+                                    vehicles: {}
+                                };
                             }
 
                             if (!vehicleMap[item.lineName].vehicles[vehicleID]) {
@@ -109,15 +116,19 @@
                                 };
                             }
 
+                            // Upewniamy się, że dateTime jest poprawnie przypisane
                             if (dateTime) {
                                 const dateObj = new Date(dateTime);
-                                const formattedTime = `${String(dateObj.getHours()).padStart(2, '0')}:${String(dateObj.getMinutes()).padStart(2, '0')}`;
+                                const formattedTime = `${String(dateObj.getHours()).padStart(2, '0')}:${String(dateObj.getMinutes()).padStart(2, '0')}`; // Formatowanie do hh:mm
                                 vehicleMap[item.lineName].vehicles[vehicleID].schedule.push({
-                                    dateTime: formattedTime,
+                                    dateTime: formattedTime, // Używamy nowego formatu
                                     direction: vehicle.direction,
                                     runID: vehicle.runID,
                                 });
+                            } else {
+                                console.log(`Brak daty dla pojazdu: ${vehicleID}, kierunek: ${vehicle.direction}`);
                             }
+
                         });
                     });
 
@@ -136,32 +147,39 @@
                         container.appendChild(dateHeader);
                     }
 
+                    // Dodanie odnośników do linii
                     const navigationLinks = document.createElement('div');
                     const linkList = document.createElement('ul');
-                    let brigadeCounters = {};
 
+                    let brigadeCounters = {}; // Obiekt do przechowywania liczników brygad dla każdej linii
                     for (const lineName in vehicleMap) {
                         const linkItem = document.createElement('li');
                         const anchor = document.createElement('a');
-                        anchor.href = `#line-${lineName}`;
+                        anchor.href = `#line-${lineName}`; // Ustawiamy link do sekcji
                         anchor.innerText = `Linia ${lineName}`;
                         linkItem.appendChild(anchor);
                         linkList.appendChild(linkItem);
 
+                        // Inicjalizowanie licznika brygady dla danej linii
                         brigadeCounters[lineName] = 1;
                     }
 
                     navigationLinks.appendChild(linkList);
                     container.appendChild(navigationLinks);
 
+                    // Generowanie sekcji dla każdej linii
                     for (const lineName in vehicleMap) {
                         const lineDiv = document.createElement('div');
-                        lineDiv.id = `line-${lineName}`;
+                        lineDiv.id = `line-${lineName}`; // Ustawienie ID dla sekcji
                         lineDiv.innerHTML = `<h3>Linia ${lineName}</h3>`;
 
                         for (const vehicleID in vehicleMap[lineName].vehicles) {
                             const vehicle = vehicleMap[lineName].vehicles[vehicleID];
+
+                            // Formatowanie numeru brygady
                             const brigadeNumber = `${lineName}-${String(brigadeCounters[lineName]).padStart(2, '0')}`;
+                            
+                            // Pogrubiona linia z informacjami o brygadzie
                             lineDiv.innerHTML += `<strong>Brygada ${brigadeNumber}: ${vehicle.formattedInfo} ` +
                                 `<a href="https://live.mpk.czest.pl/#/busstops/28c75147-7496-477e-bc9c-4f7197614119/gps/${vehicleID}" target="_blank"><img src="gps.svg" height="15px"> Lokalizacja GPS</a></strong><br>`;
 
@@ -169,26 +187,29 @@
                                 lineDiv.innerHTML += `${entry.dateTime || 'Brak daty'} > ${entry.direction} | <a href="https://live.mpk.czest.pl/#/lines/run/null/${entry.runID}" target="_blank"><img src="rozklad.svg" height="15px"> Rozkład dla całego kursu</a></strong><br>`;
                             });
 
-                            lineDiv.innerHTML += `<br>`;
-                            brigadeCounters[lineName]++;
+                            lineDiv.innerHTML += `<br>`; // Dodano odstęp między brygadami
+                            brigadeCounters[lineName]++; // Zwiększamy licznik brygady dla danej linii
                         }
 
                         container.appendChild(lineDiv);
-                        container.appendChild(document.createElement('hr'));
+                        container.appendChild(document.createElement('hr')); // Dodano separator <hr> między liniami
                     }
                 };
+
+                // Ustawiamy ograniczenia dat przy ładowaniu strony
+                setDateRestrictions();
 
                 // Obsługa przycisku "Pobierz dane"
                 document.getElementById('fetchDataButton').addEventListener('click', () => {
                     const url = document.getElementById('urlInput').value;
-                    const selectedDate = document.getElementById('datePicker').value;
+                    const selectedDate = document.getElementById('datePicker').value; // Pobieramy datę wybraną przez użytkownika
                     
                     let date = null;
                     if (selectedDate) {
-                        date = new Date(selectedDate);
+                        date = new Date(selectedDate); // Tworzymy obiekt daty
                     }
                     
-                    fetchData(url, date);
+                    fetchData(url, date); // Przekazujemy datę do funkcji fetchData
                 });
             </script>
         </td>
