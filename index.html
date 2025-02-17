@@ -38,6 +38,20 @@
             <div id="output"></div>
 
             <script>
+                const setDateRestrictions = () => {
+                    const dateInput = document.getElementById('datePicker');
+                    const today = new Date();
+                    
+                    // Ustawienie dzisiejszej daty jako maksymalnej
+                    const maxDate = today.toISOString().split('T')[0]; // Format yyyy-mm-dd
+                    dateInput.setAttribute('max', maxDate);
+                    
+                    // Ustawienie daty sprzed 7 dni jako minimalnej
+                    today.setDate(today.getDate() - 7);
+                    const minDate = today.toISOString().split('T')[0]; // Format yyyy-mm-dd
+                    dateInput.setAttribute('min', minDate);
+                };
+
                 // Funkcja do formatowania dat
                 const formatDate = (date) => {
                     const year = date.getFullYear();
