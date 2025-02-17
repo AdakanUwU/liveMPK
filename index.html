@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MPK w Częstochowie - wyszukiwanie pojazdów</title>
+    <style>
+        body {font-family: Verdana; background-color: #b0b0b0;}
+        ul {list-style-type: "» "; font-size: 15px;}
+        a {color: #6b6b6b; text-decoration:none;}
+        a:hover {color: #ce0606; transition-duration: 0.4s; text-decoration: underline;}
+        #glowny, #pasek {border-collapse:separate; border:solid white 1px; border-radius:6px; background-color: white; padding: 10px;}
+        x {text-decoration:line-through; text-decoration-color: black;}
+        #fetchDataButton {background-color: #a7a7a7; color:white; text-decoration:none; border: 1px solid #6b6b6b; border-radius: 5px;}
+        #fetchDataButton:hover {background-color: #ce0606; transition-duration: 0.8s; text-decoration: underline;}
+        #datePicker {margin-left: 10px; background-color: #a7a7a7; border-radius: 5px; border: 1px solid #6b6b6b; color: white;}
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h1, h2, h3 { color: #333; }
+        pre { white-space: pre-wrap; }
+        button { margin-left: 10px; }
+        #bus-lines-container { margin: 20px 0; }
+        hr { border: 1px solid #999; margin: 10px 0; }
+        .bus-stop-description { font-size: 0.8em; color: #555; display: inline; }
+        #urlInput {width: 300px;}
+    </style>
+</head>
+<body>
+    <table width="65%" border="0" align="center" id="glowny">
+        <td>
+            <h1>Informacje o autobusach MPK w Częstochowie</h1>
+            <input type="text" id="urlInput" placeholder="Wklej link z liveMPK tutaj">
+            <input type="date" id="datePicker">
+            <button id="fetchDataButton">Pobierz dane</button>
+            
+            <hr>
+
+            <div id="bus-lines-container"></div>
+            <div id="output"></div>
+
+            <script>
+                // Funkcja do formatowania dat
+                const formatDate = (date) => {
+                    const year = date.getFullYear();
+                    const month = String(date.getMonth() + 1).padStart(2, '0');
+                    const day = String(date.getDate()).padStart(2, '0');
+                    return { year, month, day };
+                };
+
+                // Funkcja do pobierania danych przystanku
+                const fetchBusStopData = async (busStopId) => {
+                    const response = await fetch(`https://live.mpk.czest.pl/api/locations/${busStopId}`);
+                    if (!response.ok) {
+                        console.error("Błąd wczytywania danych przystanku");
+                        return null;
+                    }
+                    return await response.json();
+                };
+
+                // Zaktualizowana funkcja do pobierania i wyświetlania danych
+                const fetchData = async (url, dateOverride = null) => {
+                    let requestUrl = url;
+                    let busStopName = '';
+                    let busStopDescription = '';
+
+                    if (url.includes('#/busstops/')) {
+                        const busStopId = url.split('/').pop();
+                        const currentDate = dateOverride || new Date();
+                        const { year, month, day } = formatDate(currentDate);
+
+                        const busStopData = await fetchBusStopData(busStopId);
+                        if (busStopData) {
+                            busStopName = busStopData.name;
+                            busStopDescription = busStopData.description;
+                        }
+
+                        requestUrl = `https://live.mpk.czest.pl/api/locations/${busStopId}/timetables/${year}/${month}/${day}`;
+                        console.log("Skrócony link wykryty. Nowy link:", requestUrl);
+                    }
+
+                    // Bezpośrednia komunikacja z API
+                    const response = await fetch(requestUrl);
+
+                    if (!response.ok) {
+                        document.getElementById('output').innerHTML = `<p style="color: red;">Błąd: ${response.status} - ${response.statusText}</p>`;
+                        return;
+                    }
+
+                    const { date, data } = await response.json();
+
+                    let formattedOutput = '';
+                    const vehicleMap = {};
+
+                    data.forEach(item => {
+                        item.vehicles.forEach(vehicle => {
+                            const vehicleID = vehicle.vehicleID;
+                            const vehicleModel = vehicle.model || "Nieznany model";
+                            const sideNo = vehicle.sideNo || "Nieznany numer taborowy";
+                            const dateTime = vehicle.dateTime;
+                            const runID = vehicle.runID || "Brak runID";
+
+                            if (!vehicleMap[item.lineName]) {
+                                vehicleMap[item.lineName] = { vehicles: {} };
+                            }
+
+                            if (!vehicleMap[item.lineName].vehicles[vehicleID]) {
+                                vehicleMap[item.lineName].vehicles[vehicleID] = {
+                                    formattedInfo: `${vehicleModel} #${sideNo}`,
+                                    schedule: []
+                                };
+                            }
+
+                            if (dateTime) {
+                                const dateObj = new Date(dateTime);
+                                const formattedTime = `${String(dateObj.getHours()).padStart(2, '0')}:${String(dateObj.getMinutes()).padStart(2, '0')}`;
+                                vehicleMap[item.lineName].vehicles[vehicleID].schedule.push({
+                                    dateTime: formattedTime,
+                                    direction: vehicle.direction,
+                                    runID: vehicle.runID,
+                                });
+                            }
+                        });
+                    });
+
+                    const container = document.getElementById('bus-lines-container');
+                    container.innerHTML = '';
+
+                    if (busStopName) {
+                        const busStopInfo = document.createElement('div');
+                        busStopInfo.innerHTML = `<h2>Przystanek: ${busStopName} <span class="bus-stop-description">${busStopDescription}</span></h2>`;
+                        container.appendChild(busStopInfo);
+                    }
+
+                    if (date) {
+                        const dateHeader = document.createElement('h2');
+                        dateHeader.innerText = `Data: ${date}`;
+                        container.appendChild(dateHeader);
+                    }
+
+                    const navigationLinks = document.createElement('div');
+                    const linkList = document.createElement('ul');
+                    let brigadeCounters = {};
+
+                    for (const lineName in vehicleMap) {
+                        const linkItem = document.createElement('li');
+                        const anchor = document.createElement('a');
+                        anchor.href = `#line-${lineName}`;
+                        anchor.innerText = `Linia ${lineName}`;
+                        linkItem.appendChild(anchor);
+                        linkList.appendChild(linkItem);
+
+                        brigadeCounters[lineName] = 1;
+                    }
+
+                    navigationLinks.appendChild(linkList);
+                    container.appendChild(navigationLinks);
+
+                    for (const lineName in vehicleMap) {
+                        const lineDiv = document.createElement('div');
+                        lineDiv.id = `line-${lineName}`;
+                        lineDiv.innerHTML = `<h3>Linia ${lineName}</h3>`;
+
+                        for (const vehicleID in vehicleMap[lineName].vehicles) {
+                            const vehicle = vehicleMap[lineName].vehicles[vehicleID];
+                            const brigadeNumber = `${lineName}-${String(brigadeCounters[lineName]).padStart(2, '0')}`;
+                            lineDiv.innerHTML += `<strong>Brygada ${brigadeNumber}: ${vehicle.formattedInfo} ` +
+                                `<a href="https://live.mpk.czest.pl/#/busstops/28c75147-7496-477e-bc9c-4f7197614119/gps/${vehicleID}" target="_blank"><img src="gps.svg" height="15px"> Lokalizacja GPS</a></strong><br>`;
+
+                            vehicle.schedule.forEach(entry => {
+                                lineDiv.innerHTML += `${entry.dateTime || 'Brak daty'} > ${entry.direction} | <a href="https://live.mpk.czest.pl/#/lines/run/null/${entry.runID}" target="_blank"><img src="rozklad.svg" height="15px"> Rozkład dla całego kursu</a></strong><br>`;
+                            });
+
+                            lineDiv.innerHTML += `<br>`;
+                            brigadeCounters[lineName]++;
+                        }
+
+                        container.appendChild(lineDiv);
+                        container.appendChild(document.createElement('hr'));
+                    }
+                };
+
+                // Obsługa przycisku "Pobierz dane"
+                document.getElementById('fetchDataButton').addEventListener('click', () => {
+                    const url = document.getElementById('urlInput').value;
+                    const selectedDate = document.getElementById('datePicker').value;
+                    
+                    let date = null;
+                    if (selectedDate) {
+                        date = new Date(selectedDate);
+                    }
+                    
+                    fetchData(url, date);
+                });
+            </script>
+        </td>
+    </table>
+</body>
+</html>
