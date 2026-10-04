@@ -1,8 +1,834 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="pl" class="scroll-smooth">
 <head>
-    <meta http-equiv="refresh" content="0; URL='https://komunikacja.cc'">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solaris Urbino 9</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brandBlue: '#3B82F6',
+                        brandAccent: '#60A5FA',
+                        darkBg: '#080C14',
+                        cardBg: '#111827',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #080C14;
+            color: #F3F4F6;
+            overflow-x: hidden;
+        }
+        .glass-panel {
+            background: rgba(17, 24, 39, 0.7);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(59, 130, 246, 0.15);
+        }
+        .glass-nav {
+            background: rgba(8, 12, 20, 0.85);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(59, 130, 246, 0.1);
+        }
+        /* Scroll reveal initial state */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #080C14;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1E293B;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #3B82F6;
+        }
+    </style>
 </head>
-<body>
+<body class="selection:bg-brandBlue selection:text-white">
+
+    <!-- Navbar -->
+    <header class="glass-nav fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#hero" class="flex items-center space-x-3 group">
+                <img src="https://raw.githubusercontent.com/AdakanUwU/liveMPK/780665a2aef0bb6eef0047d5f9a3e29df84821e6/logo.png" alt="Logo Solaris Urbino 9" class="h-10 w-auto group-hover:scale-105 transition">
+                <div>
+                    <span class="font-extrabold text-lg tracking-tight block leading-tight">Solaris Urbino 9</span>
+                    <span class="text-xs font-semibold text-brandAccent tracking-widest uppercase">Nowoczesność na miarę małego miasta</span>
+                </div>
+            </a>
+            <nav class="hidden lg:flex items-center space-x-6 text-sm font-medium text-neutral-300">
+                <a href="#hero" class="hover:text-brandAccent transition">Start</a>
+                <a href="#introduction" class="hover:text-brandAccent transition">Wstęp</a>
+                <a href="#history" class="hover:text-brandAccent transition">Historia</a>
+                <a href="#specification" class="hover:text-brandAccent transition">Specyfikacja</a>
+                <a href="#gallery" class="hover:text-brandAccent transition">Galeria</a>
+                <a href="#spotting" class="hover:text-brandAccent transition">Gdzie spotkać</a>
+                <a href="#comparison" class="hover:text-brandAccent transition">Porównanie</a>
+                <a href="#fleet" class="hover:text-brandAccent transition">Ilostan</a>
+                <a href="#about" class="hover:text-brandAccent transition">O nas</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative min-h-screen flex items-center justify-center pt-20 px-6 overflow-hidden">
+        <!-- Tło ze zdjęciem i warstwami przyciemniającymi -->
+        <div class="absolute inset-0 z-0 pointer-events-none">
+            <!-- Tutaj wstaw link do właściwego zdjęcia w atrybucie src -->
+            <img src="https://galeria.komunikacja.cc/ilostan/img.php?f=photo_6a61c3adebe683.24975378.jpg" alt="Tło Solaris Urbino 9" class="w-full h-full object-cover opacity-30 scale-105 animate-pulse duration-[10000ms]">
+            <!-- Gradienty nakładane na zdjęcie, aby pasowały do reszty strony -->
+            <div class="absolute inset-0 bg-gradient-to-b from-darkBg/80 via-darkBg/60 to-darkBg"></div>
+            <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-brandBlue/10 rounded-full blur-[140px]"></div>
+        </div>
+
+        <div class="relative z-10 max-w-5xl mx-auto text-center space-y-8 reveal">
+            <div class="inline-flex items-center space-x-2 bg-brandBlue/10 border border-brandBlue/30 text-brandAccent px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-widest">
+                <span class="w-2 h-2 rounded-full bg-brandBlue animate-pulse"></span>
+                <span>Nowoczesność na miarę małego miasta</span>
+            </div>
+
+            <h1 class="text-5xl md:text-7xl lg:text-8xl font-black tracking-tight leading-none">
+                Solaris <span class="text-transparent bg-clip-text bg-gradient-to-r from-brandBlue to-brandAccent">Urbino 9</span>
+            </h1>
+
+            <p class="text-lg md:text-xl text-neutral-400 max-w-2xl mx-auto font-light leading-relaxed">
+                Historia autobusu stworzonego, aby zapewnić komfort i niezawodność w warunkach małego miasta. 
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+                <a href="#history" class="w-full sm:w-auto bg-brandBlue hover:bg-blue-600 text-white font-bold px-8 py-4 rounded-2xl transition-all shadow-xl shadow-brandBlue/25 flex items-center justify-center space-x-3 group">
+                    <span>Pełna historia modelu</span>
+                    <i data-lucide="arrow-right" class="w-5 h-5 group-hover:translate-x-1 transition"></i>
+                </a>
+                <a href="#specification" class="w-full sm:w-auto glass-panel hover:border-brandBlue/50 text-white font-semibold px-8 py-4 rounded-2xl transition flex items-center justify-center space-x-2">
+                    <i data-lucide="book-bookmark" class="w-5 h-5 text-brandAccent"></i>
+                    <span>Specyfikacja techniczna</span>
+                </a>
+                <a href="#gallery" class="w-full sm:w-auto glass-panel hover:border-brandBlue/50 text-white font-semibold px-8 py-4 rounded-2xl transition flex items-center justify-center space-x-2">
+                    <i data-lucide="images" class="w-5 h-5 text-brandAccent"></i>
+                    <span>Galeria</span>
+                </a>
+            </div>
+
+            <!-- Statystyki / Szybkie kafelki -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-16 max-w-4xl mx-auto text-left">
+                <div class="glass-panel p-6 rounded-2xl border-l-4 border-brandBlue">
+                    <div class="text-3xl md:text-4xl font-black text-white">21</div>
+                    <div class="text-xs text-neutral-400 font-medium uppercase tracking-wider mt-1">Wyprodukowanych sztuk</div>
+                </div>
+                <div class="glass-panel p-6 rounded-2xl border-l-4 border-brandBlue">
+                    <div class="text-3xl md:text-4xl font-black text-white">2000</div>
+                    <div class="text-xs text-neutral-400 font-medium uppercase tracking-wider mt-1">Rok premiery modelu</div>
+                </div>
+                <div class="glass-panel p-6 rounded-2xl border-l-4 border-brandBlue">
+                    <div class="text-3xl md:text-4xl font-black text-white">9.35m</div>
+                    <div class="text-xs text-neutral-400 font-medium uppercase tracking-wider mt-1">Długość pojazdu</div>
+                </div>
+                <div class="glass-panel p-6 rounded-2xl border-l-4 border-brandBlue">
+                    <div class="text-3xl md:text-4xl font-black text-white">8</div>
+                    <div class="text-xs text-neutral-400 font-medium uppercase tracking-wider mt-1">Przetrwałych egzemplarzy</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section id="introduction" class="py-32 px-6 relative">
+        <div class="max-w-6xl mx-auto">
+            <div class="reveal text-center space-y-4 mb-20">
+                <h2 class="text-3xl md:text-5xl font-black tracking-tight">Wstęp do <span class="text-brandAccent">Historii</span></h2>
+                <div class="w-20 h-1.5 bg-brandBlue mx-auto rounded-full"></div>
+                <p class="text-neutral-400 max-w-xl mx-auto">Skrócona historia modelu Solarisa Urbino 9</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="reveal glass-panel p-8 rounded-3xl space-y-4 hover:border-brandBlue/50 transition group">
+                    <div class="w-14 h-14 rounded-2xl bg-brandBlue/10 flex items-center justify-center text-brandAccent group-hover:scale-110 transition">
+                        <i data-lucide="pencil" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white">Projekt</h3>
+                    <p class="text-neutral-400 text-sm leading-relaxed">
+                        Wywodzi się z modelu Neoplan K4010td, powstałego w 1999 roku w liczbie 3 sztuk. Rok później powstał już Solaris Urbino 9, pełnoprawny następca Neoplana, już w pełni pod marką Solaris.
+                    </p>
+                </div>
+
+                <div class="reveal glass-panel p-8 rounded-3xl space-y-4 hover:border-brandBlue/50 transition group" style="transition-delay: 0.1s;">
+                    <div class="w-14 h-14 rounded-2xl bg-brandBlue/10 flex items-center justify-center text-brandAccent group-hover:scale-110 transition">
+                        <i data-lucide="factory" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white">Produkcja</h3>
+                    <p class="text-neutral-400 text-sm leading-relaxed">
+                        Produkcja modelu rozpoczęła się w 2000 roku i zakończyła już na początku 2001 roku. Wyprodukowano 21 egzemplarzy, wszystkie trafiły do małych polskich miast. Żaden egzemplarz nie został wyeksportowany poza granice kraju.
+                    </p>
+                </div>
+
+                <div class="reveal glass-panel p-8 rounded-3xl space-y-4 hover:border-brandBlue/50 transition group" style="transition-delay: 0.2s;">
+                    <div class="w-14 h-14 rounded-2xl bg-brandBlue/10 flex items-center justify-center text-brandAccent group-hover:scale-110 transition">
+                        <i data-lucide="chart-column-decreasing" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white">Niepowodzenie</h3>
+                    <p class="text-neutral-400 text-sm leading-relaxed">
+                        Model nie zyskał dużego sukcesu rynkowego, głównie z powodu wysokiej ceny i tylko 2 drzwiowego układu wejść. Mimo tego model okazał się bardzo trwały i niezawodny, jednak już w 2002 roku zastąpiono go przez Solaris Urbinetto 10.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed History Section -->
+    <section id="history" class="py-32 px-6 bg-gradient-to-b from-transparent via-cardBg/30 to-transparent">
+        <div class="max-w-5xl mx-auto">
+            <div class="reveal text-center space-y-4 mb-20">
+                <h2 class="text-3xl md:text-5xl font-black tracking-tight">Pełna <span class="text-brandAccent">Historia</span> modelu</h2>
+                <div class="w-20 h-1.5 bg-brandBlue mx-auto rounded-full"></div>
+                <p class="text-neutral-400 max-w-xl mx-auto">Szczegółowa ścieżka rozwoju i losy 21 unikalnych egzemplarzy</p>
+            </div>
+
+            <div class="space-y-8">
+                <!-- Krok 1 -->
+                <div class="reveal glass-panel p-8 md:p-10 rounded-3xl border-l-4 border-brandBlue space-y-4">
+                    <div class="flex flex-wrap items-center justify-between gap-2">
+                        <span class="text-brandAccent font-mono text-sm uppercase tracking-wider font-bold">[1996–2000] Geneza i początki jako Neoplan</span>
+                        <span class="bg-brandBlue/10 text-brandAccent text-xs font-mono px-3 py-1 rounded-full border border-brandBlue/30">Wstęp</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white">Od Neoplana N4009, przez Solaris Urbino 12, po midi Urbino 9.</h3>
+                    <p class="text-neutral-300 text-sm md:text-base leading-relaxed">
+                        Neoplan Polska powstał w 1994 roku jako dystrybutor niemieckich Neoplanów w Polsce. Już rok później zdecydowano się, że należy w Polsce otworzyć własną montownię autobusów, i tym samym w 1996 roku powstał pierwszy autobus serii Neoplan N4000. W tym samym roku rozpoczęła się produkcja modelu N4009 - pierwszego autobusu klasy midi w polskim przedsiębiorstwie. Równolegle w Niemczech powstawały inne wersje N4007 i N4010, różniące się długością o 0,5 - 1 metr.<br>W 1999 roku powstał pierwszy autobus marki Solaris - model Urbino 12 - jeszcze jako produkt Neoplana Polska. W tym samym roku powstał również pierwszy zaprojektowany w pełni przez polskie przedsiębiorstwo model Neoplan K4010td, który był bezpośrednim protoplastą dla Solaris Urbino 9. Podobnie do swojego młodszego kuzyna, był autobusem bardzo niszowym, ten powstał w zaledwie 3 sztukach. Mimo tego, dał on początek midibusom produkowanym i projektowanym w pełni przez polski zakład.
+                    </p>
+                </div>
+
+                <!-- Krok 2 -->
+                <div class="reveal glass-panel p-8 md:p-10 rounded-3xl border-l-4 border-brandBlue space-y-4" style="transition-delay: 0.1s;">
+                    <div class="flex flex-wrap items-center justify-between gap-2">
+                        <span class="text-brandAccent font-mono text-sm uppercase tracking-wider font-bold">[2000-2001] Krótka produkcja modelu</span>
+                        <span class="bg-brandBlue/10 text-brandAccent text-xs font-mono px-3 py-1 rounded-full border border-brandBlue/30">21 egzemplarzy</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white">Krótka produkcja pierwszego midibusa Solarisa</h3>
+                    <p class="text-neutral-300 text-sm md:text-base leading-relaxed">
+                        Solaris Urbino 9 był pierwszym modelem midibusa produkowanym przez Neoplan Polska pod marką Solaris. Postawiono na znany już wcześniej z modeli Urbino 12, 15 i 18 design - klasyczna zaokrąglona u góry bryła nadwozia, z asymetryczną przednią szybą. Autobus wyróżniał się nowoczesnym designem, ale także nowoczesnymi aspektami technicznymi. Był w pełni niskopodłogowy - nie było mowy o wejściu po schodkach ani o podwyższonej podłodze w tylnej części pojazdu. Niestety, model nie był bez wad. Jego głównym mankamentem był brak trzeciej pary drzwi - kluczowej w polskim transporcie miejskim. Wersja dwudrzwiowa była wyraźnie odziedziczona po modelu Neoplana N4009 - stworzonego przez Niemców, gdzie dwudrzwiowy układ wejść był standardem - dla Polaków stało się to jego największym problemem. Drugą wadą, na przekór logice, była jego niezawodność i wytrzymałość. Ze względu na bardzo wysoką jakość wykonania, pojazd niestety był drogi, przez co docelowa klientela - małe miasta - nie mogły sobie na niego pozwolić. W rezultacie, przez cały okres produkcji - czyli 2000 i początek 2001 roku - powstało tylko 21 egzemplarzy, które trafiły do MPK Zduńska Wola (5 szt.), MZK Ostrołęka (10 szt.), Meteor Jaworzno (1 szt.), Necko Augustów (2 szt.) i ZKM Sochaczew (3 szt.).  
+                    </p>
+                </div>
+
+                <!-- Krok 3 -->
+                <div class="reveal glass-panel p-8 md:p-10 rounded-3xl border-l-4 border-brandBlue space-y-4" style="transition-delay: 0.2s;">
+                    <div class="flex flex-wrap items-center justify-between gap-2">
+                        <span class="text-brandAccent font-mono text-sm uppercase tracking-wider font-bold">[2002–2026] Lata i kres eksploatacji</span>
+                        <span class="bg-brandBlue/10 text-brandAccent text-xs font-mono px-3 py-1 rounded-full border border-brandBlue/30">Eksploatacja</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white">Następca - Urbino 10 - i eksploatacja Urbino 9 przez lata</h3>
+                    <p class="text-neutral-300 text-sm md:text-base leading-relaxed">
+                       W 2002 roku powstał już nowy model - Solaris Urbino/Urbinetto 10 - 3-drzwiowy, dłuższy, lepiej dostosowany do polskich realiów. Model uwielbiany przez polskich przewoźników - produkowany do dzisiaj w lekko zmodyfikowanych wersjach. Solaris Urbino 9 został odsunięty na dalszy plan, nowy model wygrał. Jedyne co po nim zostało to 21 egzemplarzy u przewoźników, którzy zaufali temu modelowi. Autobusy przez lata jeździły u swoich właścicieli, ale też ich zmieniały. W Zduńskiej Woli znalazło się finalnie aż 7 sztuk z 4 kupionych jako nowe, pojedyncze trafiły do prywaciaży, a reszta niestety na złom. Ostrołęka - największy operator Urbino 9 - pozbyła się wszystkich do 2021 roku (wszystkie 10 szt. zezłomowano). Meteor Jaworzno już po roku sprzedał swój egzemplarz, Necko Augustów sprzedało wszystkie w 2012 roku do Zduńskiej Woli (2 szt.) i MPK Kraśnik (1 szt.). W 2026 roku pozostało już tylko 8 sztuk, z czego 6 w Zduńskiej Woli i 2 w ZKM Sochaczew. Wszystkie pozostałe egzemplarze zostały zezłomowane. W Zduńskiej Woli model ten jest szczególnie ceniony, ze względu na swoją niezawodność i trwałość. 
+                     </p>
+                </div>
+
+                <!-- Krok 4 -->
+                <div class="reveal glass-panel p-8 md:p-10 rounded-3xl border-l-4 border-brandBlue space-y-4" style="transition-delay: 0.3s;">
+                    <div class="flex flex-wrap items-center justify-between gap-2">
+                        <span class="text-brandAccent font-mono text-sm uppercase tracking-wider font-bold">[Dzisiaj] Dziedzictwo</span>
+                        <span class="bg-brandBlue/10 text-brandAccent text-xs font-mono px-3 py-1 rounded-full border border-brandBlue/30">Dziedzictwo</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white">Egzemplarze zabytkowe oraz nowy Urbino 9 IV</h3>
+                    <p class="text-neutral-300 text-sm md:text-base leading-relaxed">
+                        Na szczęście, pomimo krótkiej produkcji i braku pełnego sukcesu rynkowego, dzisiaj nadal możemy cieszyć się zachowanymi egzemplarzami – i to w ruchu liniowym. Te wyjeżdżają regularnie w Zduńskiej Woli, rzadziej w Sochaczewie. Do tego, autobus nr Z 02 w Zduńskiej Woli oficjalnie zostanie zachowany jako pojazd zabytkowy. Również my – jako pasjonaci i fanklub Solarisa Urbino 9 – staramy się o możliwość odkupienia bądź przekazania nam jednego egzemplarza w celu odnowienia i zachowania go jako pojazd historyczny.<br>W 2021 roku model Urbino 9 powrócił jako nowy autobus – Solaris Urbino 9 LE electric IV generacji. Model w pełni elektryczny, niskowejściowy, dumny następca modelu z 2000 roku. Autobus przywrócił elementy znane z oryginału, takie jak dwudrzwiowy układ wejść, który tym razem sprawdził się, ponieważ model był hybrydą miejsko-podmiejską, gdzie taki układ lepiej się sprawdza..
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- specification / Specs Section -->
+    <section id="specification" class="py-32 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="reveal text-center space-y-4 mb-20">
+                <h2 class="text-3xl md:text-5xl font-black tracking-tight"><span class="text-brandAccent">Specyfikacja</span> techniczna:</h2>
+                <div class="w-20 h-1.5 bg-brandBlue mx-auto rounded-full"></div>
+                <p class="text-neutral-400 max-w-xl mx-auto">Szczegółowy podgląd na parametry techniczne Solarisa Urbino 9</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Kolumna 1 -->
+                <div class="reveal glass-panel p-6 rounded-2xl space-y-3">
+                    <div class="text-brandAccent font-mono text-xs uppercase tracking-widest">Geometria</div>
+                    <h4 class="text-lg font-bold text-white">Wymiary [mm]</h4>
+                    <ul class="space-y-2 text-sm text-neutral-300">
+                        <li class="flex justify-between border-b border-white/5 pb-2"><span>Długość:</span> <strong class="text-white">9 350</strong></li>
+                        <li class="flex justify-between border-b border-white/5 pb-2"><span>Szerokość:</span> <strong class="text-white">2 550</strong></li>
+                        <li class="flex justify-between border-b border-white/5 pb-2 pt-1"><span>Wysokość:</span> <strong class="text-white">2 850</strong></li>
+                        <li class="flex justify-between pt-1"><span>Rozstaw osi:</span> <strong class="text-white">4 430</strong></li>
+                    </ul>
+                </div>
+
+                <!-- Kolumna 2 -->
+                <div class="reveal glass-panel p-6 rounded-2xl space-y-3" style="transition-delay: 0.1s;">
+                    <div class="text-brandAccent font-mono text-xs uppercase tracking-widest">Drzwi</div>
+                    <h4 class="text-lg font-bold text-white">Wejścia</h4>
+                    <ul class="space-y-2 text-sm text-neutral-300">
+                        <li class="flex justify-between border-b border-white/5 pb-2"><span>Wysokość podłogi:</span> <strong class="text-white">360 [mm]</strong></li>
+                        <li class="flex justify-between border-b border-white/5 pb-2"><span>Układ drzwi:</span> <strong class="text-white">1-2-0</strong></li>
+                        <li class="flex justify-between pt-1"><span>Szerokość drzwi:</span> <strong class="text-white">810, 1350 [mm]</strong></li>
+                    </ul>
+                </div>
+
+                <!-- Kolumna 3 -->
+                <div class="reveal glass-panel p-6 rounded-2xl space-y-3" style="transition-delay: 0.2s;">
+                    <div class="text-brandAccent font-mono text-xs uppercase tracking-widest">Wnętrze</div>
+                    <h4 class="text-lg font-bold text-white">Przestrzeń pasażerska</h4>
+                    <ul class="space-y-2 text-sm text-neutral-300">
+                        <li class="flex justify-between border-b border-white/5 pb-2"><span>Miejsca siedzące:</span> <strong class="text-white">21</strong></li>
+                        <li class="flex justify-between border-b border-white/5 pb-2"><span>Miejsca stojące:</span> <strong class="text-white">58</strong></li>
+                        <li class="flex justify-between pt-1"><span>Klimatyzacja:</span> <strong class="text-white">Opcja</strong></li>
+                    </ul>
+                </div>
+
+                <!-- Kolumna 4 -->
+                <div class="reveal glass-panel p-6 rounded-2xl space-y-3" style="transition-delay: 0.3s;">
+                    <div class="text-brandAccent font-mono text-xs uppercase tracking-widest">Napęd</div>
+                    <h4 class="text-lg font-bold text-white">Technikalia</h4>
+                    <ul class="space-y-2 text-sm text-neutral-300">
+                        <li class="flex justify-between border-b border-white/5 pb-2"><span>Silnik:</span> <strong class="text-white">MAN D0824 LOH 05</strong></li>
+                        <li class="flex justify-between border-b border-white/5 pb-2"><span>Moc silnika:</span> <strong class="text-white">114 kW (155KM)</strong></li>
+                        <li class="flex justify-between pt-1"><span>Skrzynia biegów:</span> <strong class="text-white">Voith D851.3</strong></li>
+                    </ul>
+                </div>
+
+                <!-- Kolumna 5 -->
+                <div class="reveal glass-panel p-6 rounded-2xl space-y-3" style="transition-delay: 0.4s;">
+                    <div class="text-brandAccent font-mono text-xs uppercase tracking-widest">Masa</div>
+                    <h4 class="text-lg font-bold text-white">Masa [kg]</h4>
+                    <ul class="space-y-2 text-sm text-neutral-300">
+                        <li class="flex justify-between border-b border-white/5 pb-2"><span>Masa całkowita:</span> <strong class="text-white">14 500</strong></li>
+                        <li class="flex justify-between border-b border-white/5 pb-2"><span>Masa własna:</span> <strong class="text-white">8 400</strong></li>
+                    </ul>
+                </div>
+
+                <!-- Kolumna 6 -->
+                <div class="reveal glass-panel p-6 rounded-2xl space-y-3" style="transition-delay: 0.5s;">
+                    <div class="text-brandAccent font-mono text-xs uppercase tracking-widest">Elektronika</div>
+                    <h4 class="text-lg font-bold text-white">Systemy bezpieczeństwa</h4>
+                    <ul class="space-y-2 text-sm text-neutral-300">
+                        <li class="flex justify-between border-b border-white/5 pb-2"><span>ABS:</span> <strong class="text-white">Tak</strong></li>
+                        <li class="flex justify-between border-b border-white/5 pb-2"><span>ASR:</span> <strong class="text-white">Tak</strong></li>
+                        <li class="flex justify-between border-b border-white/5 pb-2"><span>EBS:</span> <strong class="text-white">Nie</strong></li>
+                        <li class="flex justify-between border-b border-white/5 pb-2"><span>ESP:</span> <strong class="text-white">Nie</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-32 px-6 bg-gradient-to-b from-transparent via-cardBg/30 to-transparent">
+        <div class="max-w-6xl mx-auto">
+            <div class="reveal text-center space-y-4 mb-20">
+                <h2 class="text-3xl md:text-5xl font-black tracking-tight"><span class="text-brandAccent">Galeria</span> Zdjęć</h2>
+                <div class="w-20 h-1.5 bg-brandBlue mx-auto rounded-full"></div>
+                <p class="text-neutral-400 max-w-xl mx-auto">Materiały graficzne i zdjęcia autobusów Solaris Urbino 9</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <div class="reveal group relative overflow-hidden rounded-3xl glass-panel aspect-[3/2]">
+                    <img src="https://galeria.komunikacja.cc/ilostan/img.php?f=photo_6a624e9ba2ca26.77939721.jpg" alt="Galeria 1" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-darkBg via-transparent to-transparent opacity-80 flex items-end p-6">
+                        <div>
+                            <span class="text-brandAccent text-xs font-mono font-bold uppercase">Wygląd zewnętrzny</span>
+                            <h4 class="text-white font-bold text-lg">Autobus Z 01 w Zduńskiej Woli</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reveal group relative overflow-hidden rounded-3xl glass-panel aspect-[3/2]" style="transition-delay: 0.1s;">
+                    <img src="https://galeria.komunikacja.cc/ilostan/img.php?f=photo_6a1f1d9dd81109.17966282.jpg" alt="Galeria 2" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-darkBg via-transparent to-transparent opacity-80 flex items-end p-6">
+                        <div>
+                            <span class="text-brandAccent text-xs font-mono font-bold uppercase">Wnętrze</span>
+                            <h4 class="text-white font-bold text-lg">Wnętrze zduńskowolskiego Urbino</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reveal group relative overflow-hidden rounded-3xl glass-panel aspect-[3/2]" style="transition-delay: 0.2s;">
+                    <img src="https://galeria.komunikacja.cc/ilostan/img.php?f=photo_6aa55e0e7a1687.66539913.jpg" alt="Galeria 3" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-darkBg via-transparent to-transparent opacity-80 flex items-end p-6">
+                        <div>
+                            <span class="text-brandAccent text-xs font-mono font-bold uppercase">Historia</span>
+                            <h4 class="text-white font-bold text-lg">Odnowiony zabytkowy egzemplarz</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reveal group relative overflow-hidden rounded-3xl glass-panel aspect-[3/2]" style="transition-delay: 0.2s;">
+                    <img src="https://galeria.komunikacja.cc/ilostan/img.php?f=photo_6a61c350a15d51.77120884.jpg" alt="Galeria 4" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-darkBg via-transparent to-transparent opacity-80 flex items-end p-6">
+                        <div>
+                            <span class="text-brandAccent text-xs font-mono font-bold uppercase">Grupa</span>
+                            <h4 class="text-white font-bold text-lg">Trzy Urbino 9 obok siebie</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reveal group relative overflow-hidden rounded-3xl glass-panel aspect-[3/2]" style="transition-delay: 0.2s;">
+                    <img src="https://galeria.komunikacja.cc/ilostan/img.php?f=photo_6aa55e43df2118.03324440.jpg" alt="Galeria 5" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-darkBg via-transparent to-transparent opacity-80 flex items-end p-6">
+                        <div>
+                            <span class="text-brandAccent text-xs font-mono font-bold uppercase">Pulpit</span>
+                            <h4 class="text-white font-bold text-lg">Stanowisko pracy kierowcy</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reveal group relative overflow-hidden rounded-3xl glass-panel aspect-[3/2]" style="transition-delay: 0.2s;">
+                    <img src="https://galeria.komunikacja.cc/ilostan/img.php?f=photo_6aa55e4f75f705.36803293.jpg" alt="Galeria 6" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-darkBg via-transparent to-transparent opacity-80 flex items-end p-6">
+                        <div>
+                            <span class="text-brandAccent text-xs font-mono font-bold uppercase">Symbol</span>
+                            <h4 class="text-white font-bold text-lg">Jamnik - symbol Solarisa</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- NEW SECTION: WHERE TO SPOT (Gdzie spotkać) -->
+    <section id="spotting" class="py-32 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="reveal text-center space-y-4 mb-20">
+                <h2 class="text-3xl md:text-5xl font-black tracking-tight">Gdzie można je <span class="text-brandAccent">spotkać?</span></h2>
+                <div class="w-20 h-1.5 bg-brandBlue mx-auto rounded-full"></div>
+                <p class="text-neutral-400 max-w-xl mx-auto">Poradnik dla miłośników planujących złapać Urbino 9</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="reveal glass-panel p-8 rounded-3xl space-y-6 border-l-4 border-brandBlue">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 rounded-2xl bg-brandBlue/10 flex items-center justify-center text-brandAccent">
+                            <i data-lucide="map-pin" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-white">Zduńska Wola</h3>
+                            <span class="text-xs text-brandAccent uppercase tracking-widest font-mono">6 egzemplarzy w ruchu</span>
+                        </div>
+                    </div>
+                    <p class="text-neutral-300 text-sm leading-relaxed">
+                        Największy i jeden z ostanich bastionów Solarisów Urbino 9. MPK Zduńska Wola stale eksploatuje 6 sztuk tego modelu z obu lat produkcji. Nałatwiej spotkać je dni szkolne w trakcie porannego i popołudniowego szczytu. Dodatkowo, w okresie zimowym pojawiają się częściej ze względu na większą nie zawodność silnika Diesla w zinym okresie, a w lato wyjeżdżają rzadziej ze względu na brak klimatyzacji.
+                    </p>
+                    <ul class="space-y-2 text-sm text-neutral-400">
+                        <li class="flex items-center space-x-2"><i data-lucide="check" class="w-4 h-4 text-brandAccent"></i><span>Najczęściej kursują na porannym i popołudniowym szczycie w dni szkolne.</span></li>
+                        <li class="flex items-center space-x-2"><i data-lucide="check" class="w-4 h-4 text-brandAccent"></i><span>Kursują na wszystkich liniach.</span></li>
+                        <li class="flex items-center space-x-2"><i data-lucide="check" class="w-4 h-4 text-brandAccent"></i><span>W zimę jeździ ich więcej, a w lato najmniej.</span></li>
+                        <li class="flex items-center space-x-2"><i data-lucide="check" class="w-4 h-4 text-brandAccent"></i><span>Można telefonować do dyspozytorni po konkretne informacje danego dnia.</span></li>
+                        <li class="flex items-center space-x-2"><i data-lucide="check" class="w-4 h-4 text-brandAccent"></i><span>Wszystkie pojazdy mają oryginalnego Jamnika Solarisa.</span></li>
+                    </ul>
+                    <p class="text-neutral-300 text-sm leading-relaxed">
+                        Lokalizację można sprawdzić w systemie <a href="https://zdw.kiedyprzyjedzie.pl/#/" target="_blank">kiedyprzyjedzie.pl</a> - pojazd bez znacznika klimatyzacji to autobus Solaris I generacji, nie da się niestety rozdzielić Urbino 12 od Urbino 9. 
+                    </p>
+                </div>
+
+                <div class="reveal glass-panel p-8 rounded-3xl space-y-6 border-l-4 border-brandBlue" style="transition-delay: 0.1s;">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 rounded-2xl bg-brandBlue/10 flex items-center justify-center text-brandAccent">
+                            <i data-lucide="map-pin" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-white">Sochaczew</h3>
+                            <span class="text-xs text-brandAccent uppercase tracking-widest font-mono">2 egzemplarze w ruchu</span>
+                        </div>
+                    </div>
+                    <p class="text-neutral-300 text-sm leading-relaxed">
+                        ZKM Sochaczew wciąż eksploatuje dwa wozy (nr 12 i 14). Niestety, w porównaniu do Zduńskiej Woli trafienie ich jest dużo cięższe. Obecnie jeżdżą rzadko, trzeba mieć dużo szczęścia, żeby je trafić. Dodatkowo, obie sztuki obklejone są reklamami co może psuć niektórym urok zdjęcia.
+                    </p>
+                    <ul class="space-y-2 text-sm text-neutral-400">
+                        <li class="flex items-center space-x-2"><i data-lucide="check" class="w-4 h-4 text-brandAccent"></i><span>Wyjeżdżają jako rezerwa</span></li>
+                        <li class="flex items-center space-x-2"><i data-lucide="check" class="w-4 h-4 text-brandAccent"></i><span>Mniej obciążone trasy</span></li>
+                    </ul>
+                    <p class="text-neutral-300 text-sm leading-relaxed">
+                        Lokalizację można sprawdzić w systemie <a href="https://zbiorkom.live/warsaw" target="_blank">zbiorkom.live</a> - wystarczy wyszukać numer taborowy 12 lub 14. Niestety Sochaczew jest połączony z Warszawą, więc trzeba pilnować by po wyszukaniu sprawdzać pojazdy z ZKM Sochaczew.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW SECTION: COMPARISON (Porównywarka) -->
+    <section id="comparison" class="py-32 px-6 bg-gradient-to-b from-transparent via-cardBg/30 to-transparent">
+        <div class="max-w-6xl mx-auto">
+            <div class="reveal text-center space-y-4 mb-20">
+                <h2 class="text-3xl md:text-5xl font-black tracking-tight">Ewolucja modelu: <span class="text-brandAccent">2000 vs 2021</span></h2>
+                <div class="w-20 h-1.5 bg-brandBlue mx-auto rounded-full"></div>
+                <p class="text-neutral-400 max-w-xl mx-auto">Zestawienie klasycznego Urbino 9 z nowoczesnym następcą elektrycznym</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Klasyk -->
+                <div class="reveal glass-panel p-8 rounded-3xl space-y-6 border border-neutral-700">
+                    <div class="flex justify-between items-center border-b border-neutral-800 pb-4">
+                        <h3 class="text-2xl font-bold text-white">Solaris Urbino 9</h3>
+                        <span class="bg-brandBlue/10 text-brandAccent font-mono text-xs px-3 py-1 rounded-full border border-brandBlue/30">Rok 2000</span>
+                    </div>
+                    <ul class="space-y-4 text-sm text-neutral-300">
+                        <li class="flex justify-between border-b border-neutral-800/60 pb-3"><span>Napęd:</span> <strong class="text-white">Spalinowy (MAN D0826LOH17)</strong></li>
+                        <li class="flex justify-between border-b border-neutral-800/60 pb-3"><span>Układ drzwi:</span> <strong class="text-white">1-2-0</strong></li>
+                        <li class="flex justify-between border-b border-neutral-800/60 pb-3"><span>Niskopodłogowość:</span> <strong class="text-white">100%</strong></li>
+                        <li class="flex justify-between border-b border-neutral-800/60 pb-3"><span>Wyprodukowano sztuk:</span> <strong class="text-white">21 egzemplarzy</strong></li>
+                        <li class="flex justify-between pb-1"><span>Charakterystyka:</span> <strong class="text-white">Niewiarygodnie wytrzymała konstrukcja</strong></li>
+                    </ul>
+                </div>
+
+                <!-- Nowoczesny elektryk -->
+                <div class="reveal glass-panel p-8 rounded-3xl space-y-6 border border-brandBlue/50 bg-brandBlue/5" style="transition-delay: 0.1s;">
+                    <div class="flex justify-between items-center border-b border-brandBlue/20 pb-4">
+                        <h3 class="text-2xl font-bold text-white">Urbino 9 LE electric</h3>
+                        <span class="bg-brandBlue text-white font-mono text-xs px-3 py-1 rounded-full shadow-lg shadow-brandBlue/30">Rok 2021</span>
+                    </div>
+                    <ul class="space-y-4 text-sm text-neutral-300">
+                        <li class="flex justify-between border-b border-brandBlue/10 pb-3"><span>Napęd:</span> <strong class="text-white">Elektryczny (Siemens 1DB2016-6NB06)</strong></li>
+                        <li class="flex justify-between border-b border-brandBlue/10 pb-3"><span>Układ drzwi:</span> <strong class="text-white">1-2-0</strong></li>
+                        <li class="flex justify-between border-b border-brandBlue/10 pb-3"><span>Niskopodłogowość:</span> <strong class="text-white">Niskowejściowy (ok. 50%)</strong></li>
+                        <li class="flex justify-between border-b border-brandBlue/10 pb-3"><span>Status rynkowy:</span> <strong class="text-white">Sukces w polsce i europie</strong></li>
+                        <li class="flex justify-between pb-1"><span>Charakterystyka:</span> <strong class="text-white">Nowoczesny następca, miejsko-podmiejski midibus. </strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW SECTION: FLEET TABLE (Ilostan) -->
+    <section id="fleet" class="py-32 px-6 bg-gradient-to-b from-transparent via-cardBg/30 to-transparent">
+        <div class="max-w-7xl mx-auto">
+            <div class="reveal text-center space-y-4 mb-16">
+                <div class="inline-flex items-center space-x-2 bg-brandBlue/10 border border-brandBlue/30 text-brandAccent px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-widest">
+                    <i data-lucide="database" class="w-3.5 h-3.5"></i>
+                    <span>Kompletna baza danych</span>
+                </div>
+                <h2 class="text-3xl md:text-5xl font-black tracking-tight">Ilostan floty <span class="text-brandAccent">Urbino 9</span></h2>
+                <div class="w-20 h-1.5 bg-brandBlue mx-auto rounded-full"></div>
+                <p class="text-neutral-400 max-w-xl mx-auto">Zestawienie wszystkich 21 wyprodukowanych egzemplarzy w Polsce</p>
+            </div>
+
+            <div class="reveal glass-panel rounded-3xl overflow-hidden shadow-2xl border border-brandBlue/20">
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="border-b border-neutral-800 bg-neutral-900/50 text-xs font-mono uppercase text-brandAccent">
+                                <th class="p-4 pl-6">Nr taborowy</th>
+                                <th class="p-4">Przewoźnik</th>
+                                <th class="p-4">Rok prod.</th>
+                                <th class="p-4">Obecny użytkownik / Status</th>
+                                <th class="p-4 pr-6">Uwagi</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-neutral-800/60 text-sm text-neutral-300">
+                            <tr class="hover:bg-neutral-800/30 transition">
+                                <td class="p-4 pl-6 font-bold text-white">13</td>
+                                <td class="p-4">ZKM Sochaczew</td>
+                                <td class="p-4">2000</td>
+                                <td class="p-4"><span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-rose-500/10 text-rose-400 border border-rose-500/30">Zezłomowany 2021</span></td>
+                                <td class="p-4 pr-6 text-xs text-neutral-400">Prototyp, pierwszy Urbnino 9</td>
+                            </tr>
+
+                            <tr class="hover:bg-neutral-800/30 transition">
+                                <td class="p-4 pl-6 font-bold text-white">12</td>
+                                <td class="p-4">ZKM Sochaczew</td>
+                                <td class="p-4">2000</td>
+                                <td class="p-4"><span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">Czynny</span></td>
+                                <td class="p-4 pr-6 text-xs text-neutral-400">W 2000 roku testowany w Jaworznie</td>
+                            </tr>
+
+                            <tr class="hover:bg-neutral-800/30 transition">
+                                <td class="p-4 pl-6 font-bold text-white">14</td>
+                                <td class="p-4">ZKM Sochaczew</td>
+                                <td class="p-4">2000</td>
+                                <td class="p-4"><span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">Czynny</span></td>
+                                <td class="p-4 pr-6 text-xs text-neutral-400">Uczestniczył w imprezie miłośników 20 września 2026.</td>
+                            </tr>
+
+                            <tr class="hover:bg-neutral-800/30 transition">
+                                <td class="p-4 pl-6 font-bold text-white">109</td>
+                                <td class="p-4">MZK Ostrołęka</td>
+                                <td class="p-4">2000</td>
+                                <td class="p-4"><span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-rose-500/10 text-rose-400 border border-rose-500/30">Zezłomowany 2021</span></td>
+                                <td class="p-4 pr-6 text-xs text-neutral-400"></td>
+                            </tr>
+
+                            <tr class="hover:bg-neutral-800/30 transition">
+                                <td class="p-4 pl-6 font-bold text-white">110</td>
+                                <td class="p-4">MZK Ostrołęka</td>
+                                <td class="p-4">2000</td>
+                                <td class="p-4"><span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-rose-500/10 text-rose-400 border border-rose-500/30">Zezłomowany 2018</span></td>
+                                <td class="p-4 pr-6 text-xs text-neutral-400"></td>
+                            </tr>
+
+                            <tr class="hover:bg-neutral-800/30 transition">
+                                <td class="p-4 pl-6 font-bold text-white">111</td>
+                                <td class="p-4">MZK Ostrołęka</td>
+                                <td class="p-4">2000</td>
+                                <td class="p-4"><span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-rose-500/10 text-rose-400 border border-rose-500/30">Zezłomowany 2021</span></td>
+                                <td class="p-4 pr-6 text-xs text-neutral-400"></td>
+                            </tr>
+
+                            <tr class="hover:bg-neutral-800/30 transition">
+                                <td class="p-4 pl-6 font-bold text-white">112</td>
+                                <td class="p-4">MZK Ostrołęka</td>
+                                <td class="p-4">2000</td>
+                                <td class="p-4"><span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-rose-500/10 text-rose-400 border border-rose-500/30">Zezłomowany 2020</span></td>
+                                <td class="p-4 pr-6 text-xs text-neutral-400"></td>
+                            </tr>
+
+                            <tr class="hover:bg-neutral-800/30 transition">
+                                <td class="p-4 pl-6 font-bold text-white">113</td>
+                                <td class="p-4">MZK Ostrołęka</td>
+                                <td class="p-4">2000</td>
+                                <td class="p-4"><span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-rose-500/10 text-rose-400 border border-rose-500/30">Zezłomowany 2021</span></td>
+                                <td class="p-4 pr-6 text-xs text-neutral-400"></td>
+                            </tr>
+
+                            <tr class="hover:bg-neutral-800/30 transition">
+                                <td class="p-4 pl-6 font-bold text-white">114</td>
+                                <td class="p-4">MZK Ostrołęka</td>
+                                <td class="p-4">2000</td>
+                                <td class="p-4"><span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-rose-500/10 text-rose-400 border border-rose-500/30">Zezłomowany 2021</span></td>
+                                <td class="p-4 pr-6 text-xs text-neutral-400"></td>
+                            </tr>
+
+                            <tr class="hover:bg-neutral-800/30 transition">
+                                <td class="p-4 pl-6 font-bold text-white">115</td>
+                                <td class="p-4">MZK Ostrołęka</td>
+                                <td class="p-4">2000</td>
+                                <td class="p-4"><span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-rose-500/10 text-rose-400 border border-rose-500/30">Zezłomowany 2021</span></td>
+                                <td class="p-4 pr-6 text-xs text-neutral-400"></td>
+                            </tr>
+
+                            <tr class="hover:bg-neutral-800/30 transition">
+                                <td class="p-4 pl-6 font-bold text-white">116</td>
+                                <td class="p-4">MZK Ostrołęka</td>
+                                <td class="p-4">2000</td>
+                                <td class="p-4"><span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-rose-500/10 text-rose-400 border border-rose-500/30">Zezłomowany 2021</span></td>
+                                <td class="p-4 pr-6 text-xs text-neutral-400"></td>
+                            </tr>
+
+                            <tr class="hover:bg-neutral-800/30 transition">
+                                <td class="p-4 pl-6 font-bold text-white">117</td>
+                                <td class="p-4">MZK Ostrołęka</td>
+                                <td class="p-4">2000</td>
+                                <td class="p-4"><span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-rose-500/10 text-rose-400 border border-rose-500/30">Zezłomowany 2021</span></td>
+                                <td class="p-4 pr-6 text-xs text-neutral-400"></td>
+                            </tr>
+
+                            <tr class="hover:bg-neutral-800/30 transition">
+                                <td class="p-4 pl-6 font-bold text-white">118</td>
+                                <td class="p-4">MZK Ostrołęka</td>
+                                <td class="p-4">2000</td>
+                                <td class="p-4"><span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-rose-500/10 text-rose-400 border border-rose-500/30">Zezłomowany 2021</span></td>
+                                <td class="p-4 pr-6 text-xs text-neutral-400"></td>
+                            </tr>
+
+                            <tr class="hover:bg-neutral-800/30 transition">
+                                <td class="p-4 pl-6 font-bold text-white"></td>
+                                <td class="p-4">Diagno-test Mysłowice</td>
+                                <td class="p-4">2001</td>
+                                <td class="p-4"><span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-rose-500/10 text-rose-400 border border-rose-500/30">Zezłomowany 2026</span></td>
+                                <td class="p-4 pr-6 text-xs text-neutral-400">2001-2002 - Meteor Jaworzno (868), 2002-2012 - Necko Augustów (09), 2012-2020 - MPK Kraśnik (113), 2020-2025 Wacek Kościlsko, 2025 Diagno-Test Mysłowice</td>
+                            </tr>
+
+                            <tr class="hover:bg-neutral-800/30 transition">
+                                <td class="p-4 pl-6 font-bold text-white">Z 01</td>
+                                <td class="p-4">MPK Zduńska Wola</td>
+                                <td class="p-4">2000</td>
+                                <td class="p-4"><span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">Czynny</span></td>
+                                <td class="p-4 pr-6 text-xs text-neutral-400">ex ZD 0009</tr>
+                            </tr>
+
+                            <tr class="hover:bg-neutral-800/30 transition">
+                                <td class="p-4 pl-6 font-bold text-white">Z 02</td>
+                                <td class="p-4">MPK Zduńska Wola</td>
+                                <td class="p-4">2000</td>
+                                <td class="p-4"><span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-blue-500/10 text-blue-400 border border-blue-500/30">Czynny - zabytek</span></td>
+                                <td class="p-4 pr-6 text-xs text-neutral-400">ex ZD 0010</tr>
+                            </tr>
+
+                            <tr class="hover:bg-neutral-800/30 transition">
+                                <td class="p-4 pl-6 font-bold text-white">Z 03</td>
+                                <td class="p-4">MPK Zduńska Wola</td>
+                                <td class="p-4">2000</td>
+                                <td class="p-4"><span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">Czynny</span></td>
+                                <td class="p-4 pr-6 text-xs text-neutral-400">ex ZD 0011</tr>
+                            </tr>
+
+                            <tr class="hover:bg-neutral-800/30 transition">
+                                <td class="p-4 pl-6 font-bold text-white">ZD 0012</td>
+                                <td class="p-4">MPK Zduńska Wola</td>
+                                <td class="p-4">2000</td>
+                                <td class="p-4"><span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-rose-500/10 text-rose-400 border border-rose-500/30">Zezłomowany 2023</span></td>
+                                <td class="p-4 pr-6 text-xs text-neutral-400">Jedyny zezłomowany Zduńsko Wolski Urbino 9 (po wypadku)</tr>
+                            </tr>
+
+                            <tr class="hover:bg-neutral-800/30 transition">
+                                <td class="p-4 pl-6 font-bold text-white">Z 08</td>
+                                <td class="p-4">MPK Zduńska Wola</td>
+                                <td class="p-4">2001</td>
+                                <td class="p-4"><span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">Czynny</span></td>
+                                <td class="p-4 pr-6 text-xs text-neutral-400">ex ZD 0116, podobny używany przez Solarisa jako tester.</tr>
+                            </tr>
+
+                            <tr class="hover:bg-neutral-800/30 transition">
+                                <td class="p-4 pl-6 font-bold text-white">Z 09</td>
+                                <td class="p-4">MPK Zduńska Wola</td>
+                                <td class="p-4">2000</td>
+                                <td class="p-4"><span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">Czynny</span></td>
+                                <td class="p-4 pr-6 text-xs text-neutral-400">ex ZD 0024, 2000-2010 Necko Augustów.</tr>
+                            </tr>
+
+                            <tr class="hover:bg-neutral-800/30 transition">
+                                <td class="p-4 pl-6 font-bold text-white">Z 10</td>
+                                <td class="p-4">MPK Zduńska Wola</td>
+                                <td class="p-4">2000</td>
+                                <td class="p-4"><span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-yellow-500/10 text-yellow-400 border border-yellow-500/30">Odstawiony 2024</span></td>
+                                <td class="p-4 pr-6 text-xs text-neutral-400">ex ZD 0023, 2000-2010 Necko Augustów, na części</tr>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="p-4 bg-neutral-900/80 border-t border-neutral-800 text-xs text-neutral-400 text-center">
+                    Zestawienie opiera się na oficjalnych danych ilostanowych oraz monitoringach miłośników komunikacji miejskiej.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section (NOWA SEKCJA) -->
+    <section id="about" class="py-32 px-6">
+        <div class="max-w-5xl mx-auto">
+            <div class="reveal text-center space-y-4 mb-16">
+                <h2 class="text-3xl md:text-5xl font-black tracking-tight">O <span class="text-brandAccent">nas</span></h2>
+                <div class="w-20 h-1.5 bg-brandBlue mx-auto rounded-full"></div>
+                <p class="text-neutral-400">Poznaj twórców projektu i naszą pasję do unikalnego transportu publicznego</p>
+            </div>
+
+            <div class="reveal glass-panel p-8 md:p-12 rounded-3xl space-y-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div class="space-y-4">
+                        <div class="inline-flex items-center space-x-2 bg-brandBlue/10 border border-brandBlue/30 text-brandAccent px-3 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest">
+                            <i data-lucide="heart" class="w-3.5 h-3.5"></i>
+                            <span>Miłośnicy</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white">Pasjonaci historii polskiej komunikacji miejskiej</h3>
+                        <p class="text-neutral-300 text-sm md:text-base leading-relaxed">
+                            Jesteśmy skromną grupa pasjonatów i samozwańczym fanklubem modelu Solaris Urbino 9. Chcemy, aby historia tego unikalnego autobusu była dobrze udokumentowana i ogólnodostępna w internecie. Również staramy się o pozyskanie, poprzez kupno lub przekazanie nam, jednego egzemplarza w celu odnowienia go i zachowania jako pojazd zabytkowy. 
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="glass-panel p-6 rounded-2xl text-center space-y-2 border-brandBlue/30">
+                            <div class="w-10 h-10 mx-auto rounded-xl bg-brandBlue/10 flex items-center justify-center text-brandAccent">
+                                <i data-lucide="shield-check" class="w-5 h-5"></i>
+                            </div>
+                            <h4 class="text-white font-bold text-sm">Ochrona zabytków</h4>
+                            <p class="text-xs text-neutral-400">Działania na rzecz zachowania historycznych wozów.</p>
+                        </div>
+                        <div class="glass-panel p-6 rounded-2xl text-center space-y-2 border-brandBlue/30">
+                            <div class="w-10 h-10 mx-auto rounded-xl bg-brandBlue/10 flex items-center justify-center text-brandAccent">
+                                <i data-lucide="database" class="w-5 h-5"></i>
+                            </div>
+                            <h4 class="text-white font-bold text-sm">Rzetelna wiedza</h4>
+                            <p class="text-xs text-neutral-400">Dokumentacja i monitoring floty w całej Polsce.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border-t border-neutral-800 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+                    <div class="flex items-center space-x-3">
+                        
+                             <img src="https://raw.githubusercontent.com/AdakanUwU/liveMPK/780665a2aef0bb6eef0047d5f9a3e29df84821e6/logo.png" alt="Logo Solaris Urbino 9" class="h-10 w-auto group-hover:scale-105 transition">
+                        
+                        <div>
+                            <span class="font-bold text-white text-sm block">Solaris Urbino 9</span>
+                        </div>
+                    </div>
+                    <a href="#hero" class="bg-brandBlue/10 hover:bg-brandBlue/20 text-brandAccent border border-brandBlue/30 font-semibold px-5 py-2.5 rounded-xl text-sm transition flex items-center space-x-2">
+                        <i data-lucide="arrow-up" class="w-4 h-4"></i>
+                        <span>Wróć na górę</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-16 border-t border-neutral-800/80 text-center text-sm text-neutral-500">
+        <div class="max-w-6xl mx-auto px-6 space-y-4">
+            <div class="flex items-center justify-center space-x-2">
+                
+                    <img src="https://raw.githubusercontent.com/AdakanUwU/liveMPK/780665a2aef0bb6eef0047d5f9a3e29df84821e6/logo.png" alt="Logo Solaris Urbino 9" class="h-10 w-auto group-hover:scale-105 transition">
+              
+                <span class="font-bold text-white tracking-tight">Solaris Urbino 9 - Zbiór wiadomości</span>
+            </div>
+            <p>&copy; 2026 Wszelkie prawa zastrzeżone. Strona należy do grupy komunikacja.cc - Miłośniczy Portal Komunikacyjny, FTKZ</p>
+            <div class="flex justify-center space-x-6 pt-2 text-xs">
+                <a href="#hero" class="hover:text-brandAccent transition">Start</a>
+                <a href="#introduction" class="hover:text-brandAccent transition">Wstęp</a>
+                <a href="#history" class="hover:text-brandAccent transition">Historia</a>
+                <a href="#specification" class="hover:text-brandAccent transition">Specyfikacja</a>
+                <a href="#gallery" class="hover:text-brandAccent transition">Galeria</a>
+                <a href="#spotting" class="hover:text-brandAccent transition">Gdzie spotkać</a>
+                <a href="#comparison" class="hover:text-brandAccent transition">Porównanie</a>
+                <a href="#fleet" class="hover:text-brandAccent transition">Ilostan</a>
+                <a href="#about" class="hover:text-brandAccent transition">O nas</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Initialize Lucide icons
+            lucide.createIcons();
+
+            // Scroll reveal animation observer
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.15
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.reveal').forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
 </body>
 </html>
