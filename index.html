@@ -14,6 +14,7 @@
         box-sizing: border-box;
         margin: 0;
         padding: 0;
+        letter-spacing: 0.5px;
     }
 
     @keyframes slideInUp {
@@ -285,7 +286,7 @@
         display: column;
         position: relative;
         z-index: 2;
-        height: 13.5rem;
+        height: 14rem;
         width: 20rem;
         font-weight: 600;
         font-size: 2rem;
@@ -324,6 +325,74 @@
     }
 
     .wstep-mini-badge {
+        display: inline-flex;
+        align-items: center;
+        font-size: 0.85rem;
+        font-weight: 600;
+        line-height: 1;
+        color: var(--light-color);
+        background: rgba(0, 255, 157, 0.14);
+        border: 1px solid rgba(1, 198, 80, 0.55);
+        border-radius: 10px;
+        padding: 0.35rem 0.65rem;
+    }
+
+    #historia {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        height: 200dvh;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(to top, rgb(42, 65, 48), rgb(8, 20, 13));
+    }
+
+    .historia-box {
+        display: column;
+        position: relative;
+        z-index: 2;
+        height: auto;
+        width: 45rem;
+        font-weight: 600;
+        font-size: 2rem;
+        margin: 1rem 1rem;
+        background: rgba(1, 214, 132, 0.2);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(1, 198, 80, 0.47); 
+        transition: transform 0.3s ease;
+        line-height: 1.2;
+    }
+
+    .historia-box-header {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        margin: 1.25rem 1rem 0.75rem;
+        padding-bottom: 0.75rem;
+        border-bottom: 1px solid rgba(1, 198, 80, 0.47);
+    }
+
+    .historia-box-icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        color: var(--light-color);
+        flex-shrink: 0;
+    }
+
+    .historia-box-icon svg {
+        width: 34px;
+        height: 34px;
+        stroke-width: 2;
+    }
+
+    .historia-mini-badge {
         display: inline-flex;
         align-items: center;
         font-size: 0.85rem;
@@ -409,7 +478,50 @@
                     </div>
                 </div>
             </div>
-            
+        </section>
+
+        <section id="historia">
+            <div class="slideInUp" style="display: flex; flex-direction: column; align-items: center; z-index: 2; padding: 0 1.5rem;">
+                <h1 class="wstep-title">Pełna Historia modelu</h1>
+                <h2 class="wstep-subtitle">Od Neoplana, przez I generację aż po teraźniejszość</h2>
+
+                <div style="display: column; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
+                    <div class="historia-box">
+                        <div class="historia-box-header">
+                            <div class="historia-box-icon"><span class="historia-box-year">1996–2000</span></div>
+                            <span class="historia-mini-badge">Od Neoplana N4009, przez Solaris Urbino 12, po midi Urbino 9.</span>
+                        </div>
+                        <p style="padding: 0 1rem 1rem 1rem; color: var(--light-color); font-size: 0.9rem; font-weight: 400;">Neoplan Polska powstał w 1994 roku jako dystrybutor niemieckich Neoplanów w Polsce. Już rok później zdecydowano się, że należy w Polsce otworzyć własną montownię autobusów, i tym samym w 1996 roku powstał pierwszy autobus serii Neoplan N4000. W tym samym roku rozpoczęła się produkcja modelu N4009 - pierwszego autobusu klasy midi w polskim przedsiębiorstwie. Równolegle w Niemczech powstawały inne wersje N4007 i N4010, różniące się długością o 0,5 - 1 metr. W 1999 roku powstał pierwszy autobus marki Solaris - model Urbino 12 - jeszcze jako produkt Neoplana Polska. W tym samym roku powstał również pierwszy zaprojektowany w pełni przez polskie przedsiębiorstwo model Neoplan K4010td, który był bezpośrednim protoplastą dla Solaris Urbino 9. Podobnie do swojego młodszego kuzyna, był autobusem bardzo niszowym, ten powstał w zaledwie 3 sztukach. Mimo tego, dał on początek midibusom produkowanym i projektowanym w pełni przez polski zakład.</p>
+                    </div>
+                </div>
+                <div style="display: column; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
+                    <div class="historia-box">
+                        <div class="historia-box-header">
+                            <div class="historia-box-icon"><span class="historia-box-year">2000-2001</span></div>
+                            <span class="historia-mini-badge">Krótka produkcja pierwszego midibusa Solarisa</span>
+                        </div>
+                        <p style="padding: 0 1rem 1rem 1rem; color: var(--light-color); font-size: 0.9rem; font-weight: 400;">Solaris Urbino 9 był pierwszym modelem midibusa produkowanym przez Neoplan Polska pod marką Solaris. Postawiono na znany już wcześniej z modeli Urbino 12, 15 i 18 design - klasyczna zaokrąglona u góry bryła nadwozia, z asymetryczną przednią szybą. Autobus wyróżniał się nowoczesnym designem, ale także nowoczesnymi aspektami technicznymi. Był w pełni niskopodłogowy - nie było mowy o wejściu po schodkach ani o podwyższonej podłodze w tylnej części pojazdu. Niestety, model nie był bez wad. Jego głównym mankamentem był brak trzeciej pary drzwi - kluczowej w polskim transporcie miejskim. Wersja dwudrzwiowa była wyraźnie odziedziczona po modelu Neoplana N4009 - stworzonego przez Niemców, gdzie dwudrzwiowy układ wejść był standardem - dla Polaków stało się to jego największym problemem. Drugą wadą, na przekór logice, była jego niezawodność i wytrzymałość. Ze względu na bardzo wysoką jakość wykonania, pojazd niestety był drogi, przez co docelowa klientela - małe miasta - nie mogły sobie na niego pozwolić. W rezultacie, przez cały okres produkcji - czyli 2000 i początek 2001 roku - powstało tylko 21 egzemplarzy, które trafiły do MPK Zduńska Wola (5 szt.), MZK Ostrołęka (10 szt.), Meteor Jaworzno (1 szt.), Necko Augustów (2 szt.) i ZKM Sochaczew (3 szt.).</p>
+                    </div>
+                </div>
+                <div style="display: column; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
+                    <div class="historia-box">
+                        <div class="historia-box-header">
+                            <div class="historia-box-icon"><span class="historia-box-year">2002-2026</span></div>
+                            <span class="historia-mini-badge">Następca - Urbino 10 - i eksploatacja Urbino 9 przez lata</span>
+                        </div>
+                        <p style="padding: 0 1rem 1rem 1rem; color: var(--light-color); font-size: 0.9rem; font-weight: 400;">W 2002 roku powstał już nowy model - Solaris Urbino/Urbinetto 10 - 3-drzwiowy, dłuższy, lepiej dostosowany do polskich realiów. Model uwielbiany przez polskich przewoźników - produkowany do dzisiaj w lekko zmodyfikowanych wersjach. Solaris Urbino 9 został odsunięty na dalszy plan, nowy model wygrał. Jedyne co po nim zostało to 21 egzemplarzy u przewoźników, którzy zaufali temu modelowi. Autobusy przez lata jeździły u swoich właścicieli, ale też ich zmieniały. W Zduńskiej Woli znalazło się finalnie aż 7 sztuk z 4 kupionych jako nowe, pojedyncze trafiły do prywaciaży, a reszta niestety na złom. Ostrołęka - największy operator Urbino 9 - pozbyła się wszystkich do 2021 roku (wszystkie 10 szt. zezłomowano). Meteor Jaworzno już po roku sprzedał swój egzemplarz, Necko Augustów sprzedało wszystkie w 2012 roku do Zduńskiej Woli (2 szt.) i MPK Kraśnik (1 szt.). W 2026 roku pozostało już tylko 8 sztuk, z czego 6 w Zduńskiej Woli i 2 w ZKM Sochaczew. Wszystkie pozostałe egzemplarze zostały zezłomowane. W Zduńskiej Woli model ten jest szczególnie ceniony, ze względu na swoją niezawodność i trwałość.</p>
+                    </div>
+                </div>
+                <div style="display: column; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
+                    <div class="historia-box">
+                        <div class="historia-box-header">
+                            <div class="historia-box-icon"><span class="historia-box-year">Dzisiaj</span></div>
+                            <span class="historia-mini-badge">Egzemplarze zabytkowe oraz nowy Urbino 9 IV</span>
+                        </div>
+                        <p style="padding: 0 1rem 1rem 1rem; color: var(--light-color); font-size: 0.9rem; font-weight: 400;">Na szczęście, pomimo krótkiej produkcji i braku pełnego sukcesu rynkowego, dzisiaj nadal możemy cieszyć się zachowanymi egzemplarzami – i to w ruchu liniowym. Te wyjeżdżają regularnie w Zduńskiej Woli, rzadziej w Sochaczewie. Do tego, autobus nr Z 02 w Zduńskiej Woli oficjalnie zostanie zachowany jako pojazd zabytkowy. Również my – jako pasjonaci i fanklub Solarisa Urbino 9 – staramy się o możliwość odkupienia bądź przekazania nam jednego egzemplarza w celu odnowienia i zachowania go jako pojazd historyczny. W 2021 roku model Urbino 9 powrócił jako nowy autobus – Solaris Urbino 9 LE electric IV generacji. Model w pełni elektryczny, niskowejściowy, dumny następca modelu z 2000 roku. Autobus przywrócił elementy znane z oryginału, takie jak dwudrzwiowy układ wejść, który tym razem sprawdził się, ponieważ model był hybrydą miejsko-podmiejską, gdzie taki układ lepiej się sprawdza.</p>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
