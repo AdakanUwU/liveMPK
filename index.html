@@ -285,7 +285,7 @@
         display: column;
         position: relative;
         z-index: 2;
-        height: 13rem;
+        height: 13.5rem;
         width: 20rem;
         font-weight: 600;
         font-size: 2rem;
@@ -297,6 +297,7 @@
         -webkit-backdrop-filter: blur(10px);
         border: 1px solid rgba(1, 198, 80, 0.47); 
         transition: transform 0.3s ease;
+        line-height: 1.2;
     }
 
     .wstep-box-header {
@@ -316,14 +317,12 @@
         flex-shrink: 0;
     }
 
-    /* Lekkie powiększenie ikony Lucide */
     .wstep-box-icon svg {
         width: 34px;
         height: 34px;
         stroke-width: 2;
     }
 
-    /* Mały box obok ikony */
     .wstep-mini-badge {
         display: inline-flex;
         align-items: center;
@@ -386,7 +385,7 @@
                 <h1 class="wstep-title">Wstęp do Historii</h1>
                 <h2 class="wstep-subtitle">Skrócona historia modelu</h2>
 
-                <div style="display: flex; flex-direction: row; justify-content: center; flex-wrap: wrap;">
+                <div style="display: flex; flex-direction: row; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
                     <div class="wstep-box">
                         <div class="wstep-box-header">
                             <div class="wstep-box-icon"><i data-lucide="pencil-ruler"></i></div>
